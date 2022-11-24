@@ -4,9 +4,10 @@
 
 #include <Windows.h>
 #include <d2d1.h>
+#include <dwrite.h>
 #include <wincodec.h>
 
-HRESULT UtworzZasobyNiezalezne();
-HRESULT UtworzZasoby(HWND Okno, UINT Szerokosc, UINT Wysokosc);
+void UtworzZasobyNiezalezne();
+void UtworzZasoby(HWND Okno, UINT Szerokosc, UINT Wysokosc);
 
 #endif

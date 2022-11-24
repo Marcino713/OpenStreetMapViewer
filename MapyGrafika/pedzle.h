@@ -22,17 +22,15 @@ public:
 
 class PedzelKolorowy :public Pedzel {
 public:
-	PedzelKolorowy(float r, float g, float b);
+	PedzelKolorowy(float r, float g, float b, float a);
 	virtual ~PedzelKolorowy();
 	virtual int PobierzRodzaj() { return PEDZEL_KOLOROWY; }
 
-private:
-	float r, g, b;
 };
 
 class PedzelObraz :public Pedzel {
 public:
-	PedzelObraz(int Zasob, typ_grafiki Typ);
+	PedzelObraz(BYTE* Zasob, DWORD Dlugosc);
 	virtual ~PedzelObraz();
 	int PobierzWysokosc() { return this->wys; }
 	int PobierzSzerokosc() { return this->szer; }
@@ -43,8 +41,7 @@ private:
 	int wys, szer;
 	int dx, dy;
 
-	void UtworzPedzelBmp(int Zasob);
-	void UtworzPedzelPng(int Zasob);
+	void UtworzPedzelZasob(BYTE* Zasob, DWORD Dlugosc);
 };
 
 #endif

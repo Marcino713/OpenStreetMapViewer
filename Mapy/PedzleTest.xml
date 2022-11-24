@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dane>
+<pedzle>
+	<pedzel nazwa="zielony" kolor="#00FF00" />
+	<pedzel nazwa="czerwony" kolor="#FF0000" />
+</pedzle>
+<kategorie>
+	<kat nazwa="amenity">
+		<el typ="post-office">
+			<poz min="1" max="5" grubosc="1" tlo="las.bmp" ramka="zielony" tekst="zielony" />
+		</el>
+		<el typ="post-box">
+			<poz min="1" max="2" grubosc="1" tlo="las.bmp" ramka="zielony" tekst="zielony" />
+			<poz min="3" max="5" grubosc="1" tlo="las.bmp" ramka="zielony" tekst="zielony" />
+		</el>
+	</kat>
+</kategorie>
+</dane>

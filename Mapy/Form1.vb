@@ -3,6 +3,7 @@ Imports System.Threading
 
 Friend Class wndOkno
 
+    Private Const NAZWA_PLIKU As String = "C:\Users\Marcin\Downloads\t.mapa" '"C:\Users\Marcin\Desktop\ZakopaneNowa.mapa" '"D:\Pliki\Mapy\Mapy\Zakopane.mapa" '"C:\Users\Marcin\Desktop\Pliki\Mapy\Mapy\Swarzędz.mapa"
     Private Const WSPOLCZYNNIK_POWIEKSZENIA As Single = 1.2F
     Friend wsp As Single
     Friend poziom As Integer = 0
@@ -24,13 +25,16 @@ Friend Class wndOkno
         InicjalizujGrafike(mapMapa.Handle.ToInt32, mapMapa.Width, mapMapa.Height)
         InicjalizujProgram()
 
-        If My.Application.CommandLineArgs.Count > 0 Then
-            Dim sciezka As String = My.Application.CommandLineArgs(My.Application.CommandLineArgs.Count - 1)
-            Me.Text = "Mapa - " & Path.GetFileName(sciezka)
 
-            Dim t As New Thread(AddressOf OtworzMape)
-            t.Start(sciezka)
-        End If
+        Dim p As New WczytywaniePedzli
+        Dim kat As Kategoria() = p.WczytajPlik
+
+        Dim sciezka As String
+        If My.Application.CommandLineArgs.Count > 0 Then sciezka = My.Application.CommandLineArgs(My.Application.CommandLineArgs.Count - 1) Else sciezka = NAZWA_PLIKU
+        Text = "Mapa - " & Path.GetFileName(sciezka)
+
+        Dim t As New Thread(AddressOf OtworzMape)
+        t.Start(New ParametryOtwierania With {.SciezkaPliku = sciezka, .Kategorie = kat})
     End Sub
 
     Friend UstawKontrolkiWczytywanie As New Action(AddressOf pUstawKontrolkiWczytywanie)
@@ -46,7 +50,6 @@ Friend Class wndOkno
     Private Sub pUstawKontrolkiPostep(Postep As Integer)
         Me.prgWczytywanie.Value = Postep
         prgWczytywanie.Invalidate()
-        'Application.DoEvents()
     End Sub
 
     Private Sub pUstawKontrolkiKoniec()
@@ -80,25 +83,74 @@ Friend Class wndOkno
         PokazWspolczynnik()
     End Sub
 
-    Private Sub Rysuj()
+    Friend Sub Rysuj()
         Dim d As Droga
         Dim w As Wezel
         Dim p As Point
         Dim macierz As Macierz3x3
         Dim ilosc As Integer = 0
+        Dim wolne As Boolean() = Nothing
+        Dim pocz_px As PointF
+        Dim konc_px As PointF
+        Dim kratki_x As Integer = 0
+        Dim kratki_y As Integer = 0
+        Dim dodaj_x As Single = POWIEKSZENIE_GRANICY_X * wsp
+        Dim dodaj_y As Single = POWIEKSZENIE_GRANICY_Y * wsp
+        Dim pocz As PointF = New PointF(poczatek.X - dodaj_x, poczatek.Y - dodaj_y)
+        Dim konc As PointF = New PointF(koniec.X + dodaj_x, koniec.Y + dodaj_y)
 
         macierz = UtworzMacierzPrzesuniecia(-poczatek.X, -poczatek.Y) * UtworzMacierzSkalowania(1.0F / wsp, 1.0F / wsp)
         RozpocznijRysowanie
         UstawTransformacje(-poczatek.X, -poczatek.Y, 1.0F / wsp)
 
+        If SprawdzajGestoscWezlow Then
+            pocz_px = New PointF(-POWIEKSZENIE_GRANICY_X, -POWIEKSZENIE_GRANICY_Y)
+            konc_px = New PointF(mapMapa.Width + POWIEKSZENIE_GRANICY_X, mapMapa.Height + POWIEKSZENIE_GRANICY_Y)
+            kratki_x = CInt(Math.Ceiling((konc_px.X - pocz_px.X) / ROZMIAR_SIATKI_X))
+            kratki_y = CInt(Math.Ceiling((konc_px.Y - pocz_px.Y) / ROZMIAR_SIATKI_Y))
+            ReDim wolne(kratki_x * kratki_y - 1)
+            For i As Integer = 0 To wolne.Length - 1
+                wolne(i) = True
+            Next
+        End If
+
         'Rysuj krajobraz
         For i As Integer = 0 To Mapa.drogi.Length - 1
             d = Mapa.drogi(i)
 
-            If (d.atrybuty And DROGA_KRAJOBRAZ) = DROGA_KRAJOBRAZ Then
-                If d.pedzel <> BRAK_PEDZLA AndAlso Pedzle(d.pedzel).Pedzel1 <> IntPtr.Zero AndAlso d.CzyZawiera(poczatek.X, poczatek.Y, koniec.X, koniec.Y) Then
-                    WypelnijSciezke(d.linia1, Pedzle(d.pedzel).Pedzel1)
+            If (d.danem.flagi And DROGA_KRAJOBRAZ) = DROGA_KRAJOBRAZ Then
+                If d.pedzel.PedzelTlo <> IntPtr.Zero AndAlso d.CzyZawiera(pocz.X, pocz.Y, konc.X, konc.Y) Then
+                    WypelnijSciezke(d.linia1, d.pedzel.PedzelTlo)
                     ilosc += 1
+                End If
+
+                If d.pedzel.PedzelRamka <> IntPtr.Zero Then
+                    RysujSciezke(d.linia1, d.pedzel.PedzelRamka)
+                End If
+
+                If d.pedzel.PedzelTekst <> IntPtr.Zero AndAlso d.tekst <> "" AndAlso d.RysujTekst Then
+                    Dim rys As Boolean = True
+                    p = New PointF(d.min_x + (d.max_x - d.min_x) / 2, d.min_y + (d.max_y - d.min_y) / 2) * macierz
+
+                    If SprawdzajGestoscWezlow Then
+                        If p.X < konc_px.X And p.X > pocz_px.X And p.Y < konc_px.Y And p.Y > pocz_px.Y Then
+                            Dim sx As Integer = CInt((p.X - pocz_px.X) / ROZMIAR_SIATKI_X)
+                            Dim sy As Integer = CInt((p.Y - pocz_px.Y) / ROZMIAR_SIATKI_Y)
+
+                            Dim ix As Integer = sy * kratki_x + sx
+                            If Not wolne(ix) Then
+                                rys = False
+                            End If
+                            wolne(ix) = False
+                        Else
+                            rys = False
+                        End If
+                    End If
+
+                    If rys Then
+                        RysujTekst(d.tekst, d.pedzel.PedzelTekst, p.X - 38, p.Y - 13)
+                        ilosc += 1
+                    End If
                 End If
             End If
         Next
@@ -107,10 +159,40 @@ Friend Class wndOkno
         For i As Integer = 0 To Mapa.drogi.Length - 1
             d = Mapa.drogi(i)
 
-            If (d.atrybuty And DROGA_POLE) = DROGA_POLE AndAlso (d.atrybuty And DROGA_KRAJOBRAZ) = 0 Then
-                If d.pedzel <> BRAK_PEDZLA AndAlso Pedzle(d.pedzel).Pedzel1 <> IntPtr.Zero AndAlso d.CzyZawiera(poczatek.X, poczatek.Y, koniec.X, koniec.Y) Then
-                    WypelnijSciezke(d.linia1, Pedzle(d.pedzel).Pedzel1)
+            If (d.danem.flagi And DROGA_POLE) = DROGA_POLE AndAlso (d.danem.flagi And DROGA_KRAJOBRAZ) = 0 Then
+                If d.pedzel.PedzelTlo <> IntPtr.Zero AndAlso d.CzyZawiera(pocz.X, pocz.Y, konc.X, konc.Y) Then
+                    WypelnijSciezke(d.linia1, d.pedzel.PedzelTlo)
                     ilosc += 1
+
+                    If d.pedzel.PedzelRamka <> IntPtr.Zero Then
+                        RysujSciezke(d.linia1, d.pedzel.PedzelRamka)
+                    End If
+
+                    If d.pedzel.PedzelTekst <> IntPtr.Zero AndAlso d.tekst <> "" AndAlso d.RysujTekst Then
+                        Dim rys As Boolean = True
+                        p = New PointF(d.min_x + (d.max_x - d.min_x) / 2, d.min_y + (d.max_y - d.min_y) / 2) * macierz
+
+                        If SprawdzajGestoscWezlow Then
+                            If p.X < konc_px.X And p.X > pocz_px.X And p.Y < konc_px.Y And p.Y > pocz_px.Y Then
+                                Dim sx As Integer = CInt((p.X - pocz_px.X) / ROZMIAR_SIATKI_X)
+                                Dim sy As Integer = CInt((p.Y - pocz_px.Y) / ROZMIAR_SIATKI_Y)
+
+                                Dim ix As Integer = sy * kratki_x + sx
+                                If Not wolne(ix) Then
+                                    rys = False
+                                End If
+                                wolne(ix) = False
+                            Else
+                                rys = False
+                            End If
+                        End If
+
+                        If rys Then
+                            RysujTekst(d.tekst, d.pedzel.PedzelTekst, p.X - 38, p.Y - 13)
+                            ilosc += 1
+                        End If
+                    End If
+
                 End If
             End If
         Next
@@ -119,27 +201,170 @@ Friend Class wndOkno
         For i As Integer = 0 To Mapa.drogi.Length - 1
             d = Mapa.drogi(i)
 
-            If (d.atrybuty And DROGA_POLE) = 0 Then
-                If d.pedzel <> BRAK_PEDZLA AndAlso Pedzle(d.pedzel).Pedzel1 <> IntPtr.Zero AndAlso d.CzyZawiera(poczatek.X, poczatek.Y, koniec.X, koniec.Y) Then
-                    RysujSciezke(d.linia1, Pedzle(d.pedzel).Pedzel1, Pedzle(d.pedzel).Grubosc1)
+            If (d.danem.flagi And DROGA_POLE) = 0 Then
+                If d.pedzel.PedzelTlo <> IntPtr.Zero AndAlso d.CzyZawiera(pocz.X, pocz.Y, konc.X, konc.Y) Then
+                    Dim kropki As Integer = 0
+
+                    If d.pedzel.Kropkowanie > 0 Then
+                        kropki = Kropkowania(d.pedzel.Kropkowanie - 1)
+                    End If
+
+                    If d.pedzel.PedzelRamka <> IntPtr.Zero Then
+                        RysujSciezke(d.linia1, d.pedzel.PedzelRamka, d.pedzel.Grubosc + 1)
+                    End If
+
+                    RysujSciezke(d.linia1, d.pedzel.PedzelTlo, d.pedzel.Grubosc, kropki)
                     ilosc += 1
+
+
+                    'Tekst
+                    If d.Punkty IsNot Nothing AndAlso d.pedzel.PedzelTekst <> IntPtr.Zero AndAlso d.tekst <> "" AndAlso d.RysujTekst Then
+                        Dim ptl As New List(Of PointF)
+                        Dim ptt As Point
+                        For j As Integer = 0 To d.Punkty.Length - 1
+                            ptt = d.Punkty(j) * macierz
+                            ptl.Add(New PointF(ptt.X, ptt.Y))
+                        Next
+
+                        Dim pt As PointF() = ptl.ToArray()
+
+                        Dim dl As Double
+                        Dim dx, dy As Double
+                        Dim dlx, dly As Double
+                        Dim poz As Double = POCZATEK_TEKSTU
+                        Dim ix As Integer = 0
+                        Dim l As Integer = pt.Length - 1
+                        Dim kat As Double
+
+                        Dim pcz As Point = pocz * macierz
+                        Dim knc As Point = konc * macierz
+
+                        Do
+                            dlx = pt(ix + 1).X - pt(ix).X
+                            dly = pt(ix + 1).Y - pt(ix).Y
+                            dl = Math.Sqrt(dlx * dlx + dly * dly)
+                            dx = dlx / dl
+                            dy = dly / dl
+                            If Math.Abs(dlx) < 1.0 Then kat = 90 Else kat = Math.Atan(dly / dlx) * 57.2957795
+
+                            Do
+                                If poz < dl Then
+
+                                    Dim pk As New PointF(CSng(pt(ix).X + dx * poz), CSng(pt(ix).Y + dy * poz)) ' - 13) 36
+                                    Dim r As Boolean = True
+                                    If pk.X < pcz.X Then r = False
+                                    If pk.X > knc.X Then r = False
+                                    If pk.Y < pcz.Y Then r = False
+                                    If pk.Y > knc.Y Then r = False
+
+                                    If r Then
+
+                                        If d.pedzel.Grubosc < 7 Then
+                                            pk.Y -= 10
+                                            pk.X -= 10
+                                        End If
+                                        Dim rys As Boolean = True
+
+
+                                        If SprawdzajGestoscWezlow Then
+                                            If p.X < konc_px.X And p.X > pocz_px.X And p.Y < konc_px.Y And p.Y > pocz_px.Y Then
+                                                Dim sx As Integer = CInt((p.X - pocz_px.X) / ROZMIAR_SIATKI_X)
+                                                Dim sy As Integer = CInt((p.Y - pocz_px.Y) / ROZMIAR_SIATKI_Y)
+
+                                                Dim ix2 As Integer = sy * kratki_x + sx
+                                                If Not wolne(ix2) Then
+                                                    rys = False
+                                                End If
+                                                wolne(ix2) = False
+                                            Else
+                                                rys = False
+                                            End If
+                                        End If
+
+
+
+                                        If rys Then RysujTekst(d.tekst, d.pedzel.PedzelTekst, pk.X - 100, pk.Y, CSng(kat), 200, True)
+                                        ilosc += 1
+                                    End If
+
+                                    poz += ODLEGLOSC_TEKSTU
+                                Else
+                                    poz -= dl
+                                    Exit Do
+                                End If
+                            Loop
+
+                            ix += 1
+                            If ix >= l Then Exit Do
+                        Loop
+                    End If
+
                 End If
             End If
         Next
+
+        'Rysuj zaznaczenie
+        If ZaznaczonyElement IsNot Nothing Then
+            Dim tp As Type = ZaznaczonyElement.GetType()
+            If tp.Name = "Droga" Then
+                Dim dr As Droga = CType(ZaznaczonyElement, Droga)
+                If (dr.danem.flagi And DROGA_POLE) = 0 Then
+                    RysujSciezke(dr.linia1, PedzelZaznaczenie, 5)
+                Else
+                    WypelnijSciezke(dr.linia1, PedzelZaznaczenie)
+                End If
+            End If
+
+            If tp.Name = "Wezel" Then
+                Dim wz As Wezel = CType(ZaznaczonyElement, Wezel)
+                p = wz * macierz
+                RysujObraz(PedzelZaznaczeniePunkt, p.X, p.Y)
+            End If
+        End If
 
         'Rysuj punkty
         For i As Integer = 0 To Mapa.wezly.Length - 1
             w = Mapa.wezly(i)
 
-            If w.pedzel <> BRAK_PEDZLA AndAlso Pedzle(w.pedzel).Pedzel1 <> IntPtr.Zero AndAlso w.CzyZawiera(poczatek.X, poczatek.Y, koniec.X, koniec.Y) Then
+            If w.CzyZawiera(pocz.X, pocz.Y, konc.X, konc.Y) Then
                 p = w * macierz
-                RysujObraz(Pedzle(w.pedzel).Pedzel1, p.X, p.Y)
-                ilosc += 1
+                Dim przesun As Boolean = False
+                Dim rys As Boolean = True
+
+                If SprawdzajGestoscWezlow Then
+                    If p.X < konc_px.X And p.X > pocz_px.X And p.Y < konc_px.Y And p.Y > pocz_px.Y Then
+                        Dim sx As Integer = CInt((p.X - pocz_px.X) / ROZMIAR_SIATKI_X)
+                        Dim sy As Integer = CInt((p.Y - pocz_px.Y) / ROZMIAR_SIATKI_Y)
+
+                        Dim ix As Integer = sy * kratki_x + sx
+                        If Not wolne(ix) Then
+                            rys = False
+                        End If
+                        wolne(ix) = False
+                    Else
+                        rys = False
+                    End If
+                End If
+
+                If w.pedzel.PedzelTlo <> IntPtr.Zero And rys Then
+                    RysujObraz(w.pedzel.PedzelTlo, p.X, p.Y)
+                    przesun = True
+                    ilosc += 1
+                End If
+
+                If w.pedzel.PedzelTekst <> IntPtr.Zero AndAlso w.tekst <> "" And rys Then
+                    p = New PointF(w.x, w.y) * macierz
+                    If przesun Then p.Y += 10
+                    RysujTekst(w.tekst, w.pedzel.PedzelTekst, p.X - 38, p.Y)
+                    ilosc += 1
+                End If
+
             End If
         Next
 
         ZakonczRysowanie
         lblIlosc.Text = ilosc.ToString
+        stlElementy.Text = ilosc.ToString
 
     End Sub
 
@@ -148,21 +373,21 @@ Friend Class wndOkno
 
         If wsp < 0.00000883 Then
             poz = 1
-        ElseIf wsp < 0.0000153
+        ElseIf wsp < 0.0000153 Then
             poz = 2
-        ElseIf wsp < 0.000022
+        ElseIf wsp < 0.000022 Then
             poz = 3
-        ElseIf wsp < 0.0000316
+        ElseIf wsp < 0.0000316 Then
             poz = 4
-        ElseIf wsp < 0.0000456
+        ElseIf wsp < 0.0000456 Then
             poz = 5
-        ElseIf wsp < 0.0000656
+        ElseIf wsp < 0.0000656 Then
             poz = 6
-        ElseIf wsp < 0.0000945
+        ElseIf wsp < 0.0000945 Then
             poz = 7
-        ElseIf wsp < 0.000163
+        ElseIf wsp < 0.000163 Then
             poz = 8
-        ElseIf wsp < 0.000235
+        ElseIf wsp < 0.000235 Then
             poz = 9
         Else
             poz = 10
@@ -332,10 +557,6 @@ Friend Class wndOkno
         Posprzataj
     End Sub
 
-    Private Sub pctMapa_Paint(sender As Object, e As PaintEventArgs) Handles mapMapa.Paint
-        Rysuj()
-    End Sub
-
     Private Sub PokazPoczatekKoniec()
         Dim l As Single
         Dim s As String = ""
@@ -355,5 +576,44 @@ Friend Class wndOkno
 
     Private Sub PokazWspolczynnik()
         lblWsp.Text = "wsp: " & wsp.ToString & "/" & poziom.ToString
+        stlPowiekszenie.Text = poziom.ToString
+    End Sub
+
+    Private Sub mapMapa_MouseClick(sender As Object, e As MouseEventArgs) Handles mapMapa.MouseClick
+        If Not cbSzukaj.Checked Then Exit Sub
+
+        Dim x As Single = poczatek.X + wsp * e.X
+        Dim y As Single = (poczatek.Y + wsp * e.Y)
+        Dim minx As Single = x - ZAKRES_X
+        Dim maxx As Single = x + ZAKRES_X
+        Dim miny As Single = y - ZAKRES_Y
+        Dim maxy As Single = y + ZAKRES_Y
+
+        Dim Wezly As New List(Of Wezel)
+        Dim Drogi As New List(Of Droga)
+
+        For i As Integer = 0 To Mapa.wezly.Length - 1
+            If Mapa.wezly(i).CzyZawiera(minx, miny, maxx, maxy) AndAlso Mapa.wezly(i).Wartosci IsNot Nothing Then Wezly.Add(Mapa.wezly(i))
+        Next
+
+        For i As Integer = 0 To Mapa.drogi.Length - 1
+            If Mapa.drogi(i).CzyZawiera(minx, miny, maxx, maxy) AndAlso Mapa.drogi(i).Wartosci IsNot Nothing Then Drogi.Add(Mapa.drogi(i))
+        Next
+
+        PokazOknoWyszukiwania(Wezly, Drogi)
+        cbSzukaj.Checked = False
+
+    End Sub
+
+    Private Sub cbSzukaj_CheckedChanged(sender As Object, e As EventArgs) Handles cbSzukaj.CheckedChanged
+        If cbSzukaj.Checked Then mapMapa.Cursor = Cursors.Help Else mapMapa.Cursor = New Cursor(My.Resources.grab.Handle)
+    End Sub
+
+    Private Sub mnuSzukajObiektu_Click() Handles mnuSzukajObiektu.Click
+        PokazOknoWyszukiwania(New List(Of Wezel), New List(Of Droga))
+    End Sub
+
+    Private Sub mnuSzukajAdresu_Click() Handles mnuSzukajAdresu.Click
+        PokazOknoWyszAdresu()
     End Sub
 End Class

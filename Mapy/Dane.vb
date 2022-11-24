@@ -2,6 +2,19 @@
 
     Friend Const DROGA_POLE As Integer = 1
     Friend Const DROGA_KRAJOBRAZ As Integer = 2
+    Friend Const DROGA_PUNKT As Integer = 4
+
+    Friend Const ZAKRES_X As Single = 0.0002F
+    Friend ZAKRES_Y As Single = 0.0002F
+
+    Friend ODLEGLOSC_TEKSTU As Double = 300.0
+    Friend POCZATEK_TEKSTU As Double = 20.0
+
+    Friend SprawdzajGestoscWezlow As Boolean = False
+    Friend Const POWIEKSZENIE_GRANICY_X As Integer = 100
+    Friend Const POWIEKSZENIE_GRANICY_Y As Integer = 100
+    Friend Const ROZMIAR_SIATKI_X As Integer = 100
+    Friend Const ROZMIAR_SIATKI_Y As Integer = 100
 
     Friend Class MapaKlasa
         Friend poczatek_x As Single
@@ -15,11 +28,14 @@
     Friend Class Wezel
         Friend x As Single
         Friend y As Single
-        Friend szer_tekstu As Single = 0F
-        Friend wys_tekstu As Single = 0F
         Friend tekst As String = ""
-        Friend pedzel As Byte = BRAK_PEDZLA
-        'Friend max_poziom As Byte
+        Friend pedzel As PedzleStr
+        Friend danem As New DaneMalowania
+        Friend Wartosci As KluczWartosc() = Nothing
+        'Friend Flagi As Integer = 0
+        Friend Ulica As String = ""
+        Friend NrDomu As String = ""
+        Friend id As String = ""
 
         Friend Function CzyZawiera(minx As Single, miny As Single, maxx As Single, maxy As Single) As Boolean
             If x < minx Then Return False
@@ -33,16 +49,20 @@
 
     Friend Class Droga
         Friend linia1 As IntPtr
-        Friend szer_tekstu As Single = 0F
-        Friend wys_tekstu As Single = 0F
         Friend tekst As String = ""
-        Friend pedzel As Byte = BRAK_PEDZLA
+        Friend pedzel As PedzleStr
+        Friend danem As New DaneMalowania
         Friend min_x As Single = 1000.0F
         Friend min_y As Single = 1000.0F
         Friend max_x As Single = -1000.0F
         Friend max_y As Single = -1000.0F
-        Friend atrybuty As Integer = 0
         Friend max_poziom As Byte = 255
+        Friend Wartosci As KluczWartosc() = Nothing
+        'Friend Flagi As Integer = 0
+        Friend Ulica As String = ""
+        Friend NrDomu As String = ""
+        Friend Punkty As Wezel() = Nothing
+        Friend RysujTekst As Boolean = True
 
         Friend Function CzyZawiera(minx As Single, miny As Single, maxx As Single, maxy As Single) As Boolean
             If max_x < minx Then Return False
@@ -56,45 +76,57 @@
 
 
     Friend Class DaneMalowaniaPoziom
-        Friend min_poziom As Integer
-        Friend max_poziom As Integer
-        'Friend pedzel1 As IntPtr
-		'Friend pedzel2 As IntPtr
-		'Friend pedzel3 As IntPtr
-		Friend pedzle As PedzleStr
+        Friend MinPoziom As Integer = 0
+        Friend MaxPoziom As Integer = 0
+        Friend Pedzle As PedzleStr
 
-        'Friend Sub New(min_poziom As Integer, max_poziom As Integer, id_zasobu_pedzla As Integer)
-        '    min = min_poziom
-        '    max = max_poziom
-        '    pedzel = UtworzPedzelObraz(id_zasobu_pedzla)
-        'End Sub
+        Friend Sub New()
+            Pedzle.Grubosc = 1.0F
+            Pedzle.Kropkowanie = 0
+        End Sub
 
-        'Friend Sub New(min_poziom As Integer, max_poziom As Integer, r As Single, g As Single, b As Single)
-        '    min = min_poziom
-        '    max = max_poziom
-        '    pedzel = UtworzPedzelKolor(r, g, b)
-        'End Sub
+        Friend Sub New(min_poziom As Integer, max_poziom As Integer, pedzel_tlo As IntPtr)
+            MinPoziom = min_poziom
+            MaxPoziom = max_poziom
+            Pedzle.PedzelTlo = pedzel_tlo
+            Pedzle.Grubosc = 1.0F
+            Pedzle.Kropkowanie = 0
+        End Sub
 
-        Friend Sub New(min_poziom As Integer, max_poziom As Integer, pedzel1 As IntPtr, Optional gr1 As Single = 1.0F, Optional pedzel2 As Integer = 0, Optional pedzel3 As Integer = 0)
-            Me.min_poziom = min_poziom
-            Me.max_poziom = max_poziom
-            Me.pedzle.Pedzel1 = pedzel1
-            Me.pedzle.Grubosc1 = gr1
-            Me.pedzle.Pedzel2 = IntPtr.op_Explicit(pedzel2)
-            Me.pedzle.Pedzel3 = IntPtr.op_Explicit(pedzel3)
+        Friend Sub New(min_poziom As Integer, max_poziom As Integer, pedzel_tlo As IntPtr, gr As Single)
+            MinPoziom = min_poziom
+            MaxPoziom = max_poziom
+            Pedzle.PedzelTlo = pedzel_tlo
+            Pedzle.Grubosc = gr
+            Pedzle.Kropkowanie = 0
+        End Sub
+
+        Friend Sub New(min_poziom As Integer, max_poziom As Integer, pedzel_tlo As IntPtr, gr As Single, pedzel_ramka As IntPtr, pedzel_tekst As IntPtr)
+            MinPoziom = min_poziom
+            MaxPoziom = max_poziom
+            Pedzle.PedzelTlo = pedzel_tlo
+            Pedzle.Grubosc = gr
+            Pedzle.PedzelRamka = pedzel_ramka
+            Pedzle.PedzelTekst = pedzel_tekst
+            Pedzle.Kropkowanie = 0
         End Sub
 
     End Class
 
     Friend Class DaneMalowania
+        Friend typ As String
+        Friend flagi As Integer
         Friend max_poziom As Integer
+        Friend priotytet As Integer = 0
         Friend poziomy As DaneMalowaniaPoziom()
+        Friend Nazwa As String
+        Friend PrKategorii As Integer = 0
 
         Friend Sub New(ParamArray Poziomy As DaneMalowaniaPoziom())
             Dim max As Integer = 0
 
             For i As Integer = 0 To Poziomy.Length - 1
-                If Poziomy(i).max_poziom > max Then max = Poziomy(i).max_poziom
+                If Poziomy(i).MaxPoziom > max Then max = Poziomy(i).MaxPoziom
             Next
 
             max_poziom = max
@@ -103,19 +135,43 @@
 
         Friend Function PobierzPedzle(Poziom As Integer) As PedzleStr
             For i As Integer = 0 To poziomy.Length - 1
-                If poziomy(i).min_poziom <= Poziom AndAlso poziomy(i).max_poziom >= Poziom Then Return poziomy(i).pedzle
+                If poziomy(i).MinPoziom <= Poziom AndAlso poziomy(i).MaxPoziom >= Poziom Then Return poziomy(i).Pedzle
             Next
 
-            Return New PedzleStr With {.Pedzel1 = IntPtr.Zero}
+            Return New PedzleStr
+        End Function
+
+        Public Overrides Function ToString() As String
+            Dim s As String
+            If Nazwa = "" Then s = typ Else s = Nazwa
+            Return s & ", " & priotytet.ToString
         End Function
 
     End Class
-	
-	Friend Structure PedzleStr
-        Friend Pedzel1 As IntPtr
-        Friend Grubosc1 As Single
-        Friend Pedzel2 As IntPtr
-		Friend Pedzel3 As IntPtr
-	End Structure
+
+    Friend Structure PedzleStr
+        Friend PedzelTlo As IntPtr '= IntPtr.Zero
+        Friend PedzelRamka As IntPtr '= IntPtr.Zero
+        Friend PedzelTekst As IntPtr '= IntPtr.Zero
+        Friend Grubosc As Single '= 1.0F
+        Friend Kropkowanie As Integer '= 0
+    End Structure
+
+    Friend Structure KluczWartosc
+        Friend Klucz As String
+        Friend Wartosc As String
+        Public Overrides Function ToString() As String
+            Return Klucz & "=" & Wartosc
+        End Function
+        Friend Sub New(k As String, v As String)
+            Klucz = k
+            Wartosc = v
+        End Sub
+    End Structure
+
+    'Friend Structure PunktTekstu
+    '    Friend Punkt As PointF
+    '    Friend Kat As Single
+    'End Structure
 
 End Module

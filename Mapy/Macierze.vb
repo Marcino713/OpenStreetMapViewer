@@ -49,6 +49,13 @@
             p.Y = Convert.ToInt32(Wezel_.x * Macierz.e12 + Wezel_.y * Macierz.e22 + Macierz.e32)
             Return p
         End Operator
+
+        Public Shared Operator *(Wezel_ As PointF, Macierz As Macierz3x3) As Point
+            Dim p As New Point
+            p.X = Convert.ToInt32(Wezel_.X * Macierz.e11 + Wezel_.Y * Macierz.e21 + Macierz.e31)
+            p.Y = Convert.ToInt32(Wezel_.X * Macierz.e12 + Wezel_.Y * Macierz.e22 + Macierz.e32)
+            Return p
+        End Operator
     End Class
 
     Friend Function UtworzMacierzPrzesuniecia(Dx As Single, Dy As Single) As Macierz3x3

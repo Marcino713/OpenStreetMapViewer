@@ -1,0 +1,1694 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dane>
+<pedzle>
+	<pedzel nazwa="power_line" kolor="#898989" />
+	<pedzel nazwa="power_substation" kolor="#E2CBDE" />
+	<pedzel nazwa="highway_primary" kolor="#FDD7A1" />
+	<pedzel nazwa="highway_motorway" kolor="#E990A0" />
+	<pedzel nazwa="highway_trunk" kolor="#FBB29A" />
+	<pedzel nazwa="highway_secondary" kolor="#F6FABB" />
+	<pedzel nazwa="highway_raceway" kolor="#FFC0CA" />
+	<pedzel nazwa="highway_cycleway" kolor="#0000FF" />
+	<pedzel nazwa="highway_path" kolor="#F9685C" />
+	<pedzel nazwa="highway_track" kolor="#C69C49" />
+	<pedzel nazwa="highway_platform" kolor="#BBBBBB" />
+	<pedzel nazwa="highway_tlo" kolor="#C0FFFFFF" />
+	<pedzel nazwa="highway_livingstreet" kolor="#CDCDCD" />
+	<pedzel nazwa="highway_pedestrian" kolor="#DDDDE8" />
+	<pedzel nazwa="highway_services" kolor="#EFC8C8" />
+	<pedzel nazwa="bialy" kolor="#FFFFFF" />
+	<pedzel nazwa="barrier_block" kolor="#7D7C7C" />
+	<pedzel nazwa="barrier_wall" kolor="#AAA9A5" />
+	<pedzel nazwa="barrier_yes" kolor="#B5B3B0" />
+	<pedzel nazwa="water" kolor="#B4D0D1" />
+	<pedzel nazwa="building" kolor="#D9D0C9" />
+	<pedzel nazwa="building_important" kolor="#AF9C8D" />
+	<pedzel nazwa="railway_rail" kolor="#707070" />
+	<pedzel nazwa="railway_yard" kolor="#B0B0B0" />
+	<pedzel nazwa="railway_tram" kolor="#444444" />
+	<pedzel nazwa="railway_disused" kolor="#808080" />
+	<pedzel nazwa="railway_funicular" kolor="#605C59" />
+	<pedzel nazwa="railway_miniature" kolor="#A6B2A5" />
+	<pedzel nazwa="railway_narrow" kolor="#62615C" />
+	<pedzel nazwa="landuse_brownfield" kolor="#B6B690" />
+	<pedzel nazwa="landuse_commercial" kolor="#EECFCF" />
+	<pedzel nazwa="landuse_farmland" kolor="#F9E8CB" />
+	<pedzel nazwa="landuse_farmyard" kolor="#EACCA4" />
+	<pedzel nazwa="landuse_garages" kolor="#DEDDCC" />
+	<pedzel nazwa="landuse_grass" kolor="#CFEDA5" />
+	<pedzel nazwa="landuse_greenfield" kolor="#F1EEE8" />
+	<pedzel nazwa="landuse_industrial" kolor="#E6D1E3" />
+	<pedzel nazwa="landuse_meadow" kolor="#CFECA8" />
+	<pedzel nazwa="landuse_railway" kolor="#ECD8FF" />
+	<pedzel nazwa="landuse_recreationground" kolor="#CFEDA5" />
+	<pedzel nazwa="landuse_religious" kolor="#CECDCA" />
+	<pedzel nazwa="landuse_residential" kolor="#DADADA" />
+	<pedzel nazwa="landuse_retail" kolor="#FECAC5" />
+	<pedzel nazwa="landuse_allotments_tekst" kolor="#855021" />
+	<pedzel nazwa="landuse_brownfield_tekst" kolor="#595948" />
+	<pedzel nazwa="landuse_cemetery_tekst" kolor="#2D4931" />
+	<pedzel nazwa="landuse_industrial_tekst" kolor="#7B5872" />
+	<pedzel nazwa="landuse_meadow_tekst" kolor="#538026" />
+	<pedzel nazwa="aeroway_apron" kolor="#E9D1FF" />
+	<pedzel nazwa="manmade_cutline" kolor="#F1E3E2" />
+	<pedzel nazwa="manmade_pier" kolor="#DDDDE8" />
+	<pedzel nazwa="manmade_breakwater" kolor="#AAAAAA" />
+	<pedzel nazwa="leisure_garden" kolor="#CFECA8" />
+	<pedzel nazwa="leisure_park" kolor="#CDF7C9" />
+	<pedzel nazwa="leisure_pitch" kolor="#AAE0CB" />
+	<pedzel nazwa="leisure_sportscentre" kolor="#DFFCE2" />
+	<pedzel nazwa="leisure_track" kolor="#BDE3CB" />
+	<pedzel nazwa="leisure_garden_tekst" kolor="#1B8B24" />
+	<pedzel nazwa="leisure_park_tekst" kolor="#0C8416" />
+	<pedzel nazwa="leisure_sportscentre_tekst" kolor="#0A6D12" />
+	<pedzel nazwa="amenity_college" kolor="#F0F1D7" />
+	<pedzel nazwa="amenity_parking" kolor="#EEEEEE" />
+	<pedzel nazwa="tourism_attraction" kolor="#F2CAEA" />
+	<pedzel nazwa="tourism_campsite" kolor="#DEF6C0" />
+	<pedzel nazwa="tekst_brazowy" kolor="#734A08" />
+	<pedzel nazwa="tekst_rozowy" kolor="#DA0092" />
+	<pedzel nazwa="tekst_niebieski" kolor="#0092DA" />
+	<pedzel nazwa="tekst_fioletowy" kolor="#AC39AC" />
+	<pedzel nazwa="tekst_fioletowy2" kolor="#5768EC" />
+	<pedzel nazwa="tekst_fioletowy3" kolor="#8461C4" />
+	<pedzel nazwa="tekst_szary" kolor="#555555" />
+	<pedzel nazwa="tekst_zielony" kolor="#39AC39" />
+	<pedzel nazwa="tekst_peak" kolor="#D08F55" />
+	<pedzel nazwa="tekst_stacja" kolor="#7981B0" />
+	<pedzel nazwa="tekst_water" kolor="#5989B8" />
+	<pedzel nazwa="natural_treerow" kolor="#A9CEA1" />
+	<pedzel nazwa="natural_heath" kolor="#D6D99F" />
+	<pedzel nazwa="natural_grassland" kolor="#C6E4B4" />
+	<pedzel nazwa="natural_grassland_tekst" kolor="#4D7C20" />
+	<pedzel nazwa="historic_wall" kolor="#6E6E6E" />
+	<pedzel nazwa="manmade_pipeline" kolor="#8589A3" />
+	<pedzel nazwa="boundary_nationalpark1" kolor="#94CD80" />
+	<pedzel nazwa="boundary_nationalpark2" kolor="#AEDB96" />
+	<pedzel nazwa="boundary_nationalpark_tekst" kolor="#21901F" />
+	<pedzel nazwa="boundary_administrative" kolor="#CF9BCB" />
+	<pedzel nazwa="niebieski" kolor="#0000FF" />
+	<pedzel nazwa="zielony" kolor="#00FF00" />
+	<pedzel nazwa="czerwony" kolor="#FF0000" />
+	<pedzel nazwa="zolty" kolor="#FFF000" />
+	<pedzel nazwa="czarny" kolor="#000000" />
+</pedzle>
+<kategorie>
+	<kat nazwa="railway">
+		<el typ="crossing" pl="Przejście przez tory">
+			<poz min="1" max="2" tlo="railway_crossing.png" />
+		</el>
+		<el typ="level_crossing" pl="Przejazd kolejowy">
+			<poz min="1" max="2" tlo="railway_crossing.png" />
+		</el>
+		<el typ="signal" pl="Sygnalizacja kolejowa">
+			<poz min="1" max="2" tlo="highway_signals.png" />
+		</el>
+		<el typ="subway_entrance" pl="Wejście do metra">
+			<poz min="1" max="2" tlo="railway_subwayentrance.png" />
+		</el>
+		<el typ="rail" pl="Tor główny">
+			<poz min="1" max="1" tlo="bialy" ramka="railway_rail" grubosc="3" kreski="2" tekst="railway_tram" />
+			<poz min="2" max="5" tlo="bialy" ramka="railway_rail" grubosc="2" kreski="2" tekst="railway_tram" />
+			<poz min="5" max="9" tlo="railway_rail" grubosc="2" />
+			<poz min="9" max="10" tlo="railway_rail" grubosc="1" />
+		</el>
+		<el typ="tram" priorytet="20" pl="Tor tramwajowy">
+			<poz min="1" max="4" grubosc="2" tlo="railway_tram" tekst="railway_tram" />
+			<poz min="5" max="9" grubosc="2" tlo="railway_tram" />
+		</el>
+		<el typ="abandoned" pl="Zlikwidowana linia kolejowa">
+			<poz min="1" max="3" grubosc="2" tlo="railway_disused" kreski="1" tekst="railway_tram" />
+			<poz min="4" max="6" grubosc="2" tlo="railway_disused" kreski="1" />
+		</el>
+		<el typ="construction" pl="Budowana linia kolejowa">
+			<poz min="1" max="3" grubosc="2" tlo="railway_disused" kreski="1" tekst="railway_tram" />
+			<poz min="4" max="6" grubosc="2" tlo="railway_disused" kreski="1" />
+		</el>
+		<el typ="disused" pl="Nieużywana linia kolejowa">
+			<poz min="1" max="3" grubosc="2" tlo="railway_disused" kreski="1" tekst="railway_tram" />
+			<poz min="4" max="6" grubosc="2" tlo="railway_disused" kreski="1" />
+		</el>
+		<el typ="funicular" pl="Kolej linowo-terenowa">
+			<poz min="1" max="5" grubosc="2" tlo="railway_funicular" tekst="railway_tram" />
+			<poz min="6" max="10" grubosc="2" tlo="railway_funicular" />
+		</el>
+		<el typ="light_rail" pl="Szybki tramwaj">
+			<poz min="1" max="4" grubosc="2" tlo="railway_tram" tekst="railway_tram" />
+			<poz min="5" max="9" grubosc="2" tlo="railway_tram" />
+		</el>
+		<el typ="miniature" pl="Kolej miniaturowa">
+			<poz min="1" max="4" grubosc="2" tlo="railway_miniature" tekst="railway_tram" />
+			<poz min="5" max="9" grubosc="2" tlo="railway_miniature" />
+		</el>
+		<el typ="monorail" pl="Kolej jednoszynowa">
+			<poz min="1" max="5" grubosc="2" tlo="railway_tram" tekst="railway_tram" />
+			<poz min="6" max="10" grubosc="2" tlo="railway_tram" />
+		</el>
+		<el typ="narrow_gauge" pl="Kolej wąskotorowa">
+			<poz min="1" max="4" grubosc="2" tlo="railway_narrow" tekst="railway_tram" />
+			<poz min="5" max="10" grubosc="2" tlo="railway_narrow" />
+		</el>
+		<el typ="preserved" pl="Kolej zabytkowa">
+			<poz min="1" max="4" grubosc="2" tlo="railway_narrow" tekst="railway_tram" />
+			<poz min="5" max="10" grubosc="2" tlo="railway_narrow" />
+		</el>
+		<el typ="halt" pl="Przystanek osobowy">
+			<poz min="1" max="7" tlo="railway_station.png" tekst="tekst_stacja" />
+		</el>
+		<el typ="station" pl="Stacja kolejowa">
+			<poz min="1" max="7" tlo="railway_station.png" tekst="tekst_stacja" />
+		</el>
+		<el typ="tram_stop" pl="Przystanek tramwajowy">
+			<poz min="1" max="4" tlo="railway_station.png" tekst="tekst_stacja" />
+		</el>
+		<el typ="platform" flagi="pole" pl="Peron">
+			<poz min="1" max="4" tlo="highway_platform" tekst="railway_tram" ramka="barrier_yes" />
+		</el>
+	</kat>
+	<kat nazwa="service">
+		<el typ="yard" priorytet="10" pl="Tor dodatkowy">
+			<poz min="1" max="1" tlo="bialy" ramka="railway_yard" grubosc="3" kreski="2" tekst="railway_tram" />
+			<poz min="2" max="5" tlo="bialy" ramka="railway_yard" grubosc="2" kreski="2" />
+		</el>
+		<el typ="siding" priorytet="10" pl="Tor dodatkowy">
+			<poz min="1" max="1" tlo="bialy" ramka="railway_yard" grubosc="3" kreski="2" tekst="railway_tram" />
+			<poz min="2" max="5" tlo="bialy" ramka="railway_yard" grubosc="2" kreski="2" />
+		</el>
+		<el typ="spur" priorytet="10" pl="Bocznica">
+			<poz min="1" max="1" tlo="bialy" ramka="railway_yard" grubosc="3" kreski="2" tekst="railway_tram" />
+			<poz min="2" max="5" tlo="bialy" ramka="railway_yard" grubosc="2" kreski="2" />
+		</el>
+	</kat>
+	<kat nazwa="building" flagi="pole">
+		<el typ="*" priorytet="-10" pl="Budynek" prkat="-10">
+			<poz min="1" max="4" tlo="building" ramka="barrier_wall" tekst="railway_tram" />
+		</el>
+		<el typ="church" pl="Kościół">
+			<poz min="1" max="4" tlo="building_important" ramka="barrier_wall" tekst="railway_tram" />
+		</el>
+		<el typ="train_station" pl="Dworzec kolejowy">
+			<poz min="1" max="4" tlo="building_important" ramka="barrier_wall" tekst="railway_tram" />
+		</el>
+	</kat>
+	<kat nazwa="addr:housenumber" flagi="punkt">
+		<el typ="*" priorytet="-10" prkat="-10" pl="Numer domu">
+			<poz min="1" max="1" tekst="railway_tram" />
+		</el>
+	</kat>
+	<kat nazwa="place" flagi="punkt">
+		<el typ="*" priorytet="-10">
+			<poz min="1" max="4" tekst="railway_tram" />
+		</el>
+		<el typ="city">
+			<poz min="3" max="10" tekst="railway_tram" />
+		</el>
+		<el typ="town">
+			<poz min="3" max="10" tekst="railway_tram" />
+		</el>
+		<el typ="suburb">
+			<poz min="3" max="8" tekst="railway_tram" />
+		</el>
+		<el typ="neighbourhood">
+			<poz min="3" max="8" tekst="railway_tram" />
+		</el>
+		<el typ="village">
+			<poz min="3" max="8" tekst="railway_tram" />
+		</el>
+		<el typ="hamlet">
+			<poz min="1" max="5" tekst="railway_tram" />
+		</el>
+		<el typ="isolated_dwelling">
+			<poz min="1" max="5" tekst="railway_tram" />
+		</el>
+		<el typ="locality">
+			<poz min="1" max="5" tekst="railway_tram" />
+		</el>
+	</kat>
+	<kat nazwa="amenity" flagi="punkt">
+		<el typ="bar" pl="Bar">
+			<poz min="1" max="2" tlo="amenity_bar.png" tekst="tekst_brazowy" />
+			<poz min="3" max="4" tlo="amenity.png" />
+		</el>
+		<el typ="bbq" pl="Grill">
+			<poz min="1" max="2" tlo="amenity_bbq.png" tekst="tekst_brazowy" />
+			<poz min="3" max="4" tlo="amenity.png" />
+		</el>
+		<el typ="biergarten" pl="Ogródek piwny">
+			<poz min="1" max="2" tlo="amenity_biergarten.png" tekst="tekst_brazowy" />
+			<poz min="3" max="4" tlo="amenity.png" />
+		</el>
+		<el typ="cafe" pl="Kawiarnia">
+			<poz min="1" max="2" tlo="amenity_cafe.png" tekst="tekst_brazowy" />
+			<poz min="3" max="4" tlo="amenity.png" />
+		</el>
+		<el typ="drinking_water" pl="Źródło wody pitnej">
+			<poz min="1" max="2" tlo="amenity_drinkingwater.png" tekst="tekst_brazowy" />
+			<poz min="3" max="4" tlo="amenity.png" />
+		</el>
+		<el typ="fast_food" pl="Bar szybkiej obsługi">
+			<poz min="1" max="2" tlo="amenity_fastfood.png" tekst="tekst_brazowy" />
+			<poz min="3" max="4" tlo="amenity.png" />
+		</el>
+		<el typ="food_court" pl="Przestrzeń gastronomiczna">
+			<poz min="1" max="2" tlo="amenity_restaurant.png" tekst="tekst_brazowy" />
+			<poz min="3" max="4" tlo="amenity.png" />
+		</el>
+		<el typ="ice_cream" pl="Lodziarnia">
+			<poz min="1" max="2" tlo="amenity_icecream.png" tekst="tekst_brazowy" />
+			<poz min="3" max="4" tlo="amenity.png" />
+		</el>
+		<el typ="pub" pl="Pub">
+			<poz min="1" max="2" tlo="amenity_pub.png" tekst="tekst_brazowy" />
+			<poz min="3" max="4" tlo="amenity.png" />
+		</el>
+		<el typ="restaurant" pl="Restauracja">
+			<poz min="1" max="2" tlo="amenity_restaurant.png" tekst="tekst_brazowy" />
+			<poz min="3" max="4" tlo="amenity.png" />
+		</el>
+		<el typ="library" pl="Biblioteka">
+			<poz min="1" max="2" tlo="amenity_library.png" tekst="tekst_brazowy" />
+			<poz min="3" max="4" tlo="amenity.png" />
+		</el>
+		<el typ="bicycle_parking" pl="Parking rowerowy">
+			<poz min="1" max="2" tlo="amenity_bicycleparking.png" tekst="tekst_niebieski" />
+		</el>
+		<el typ="bicycle_rental" pl="Wypożyczalnia rowerów">
+			<poz min="1" max="2" tlo="amenity_bicyclerental.png" tekst="tekst_niebieski" />
+		</el>
+		<el typ="bus_station" pl="Dworzec autobusowy">
+			<poz min="1" max="2" tlo="amenity_busstation.png" tekst="tekst_niebieski" />
+		</el>
+		<el typ="car_rental" pl="Wypożyczalnia samochodów">
+			<poz min="1" max="2" tlo="amenity_carrental.png" tekst="tekst_niebieski" />
+		</el>
+		<el typ="car_wash" pl="Myjnia samochodowa">
+			<poz min="1" max="2" tlo="amenity_carwash.png" tekst="tekst_brazowy" />
+			<poz min="3" max="4" tlo="amenity.png" />
+		</el>
+		<el typ="charging_station" pl="Stacja ładowania pojazdów elektrycznych">
+			<poz min="1" max="2" tlo="amenity_chargingstation.png" tekst="tekst_niebieski" />
+		</el>
+		<el typ="ferry_terminal" pl="Terminal promowy">
+			<poz min="1" max="2" tlo="amenity_ferryterminal.png" tekst="tekst_fioletowy3" />
+		</el>
+		<el typ="fuel" pl="Stacja paliw">
+			<poz min="1" max="2" tlo="amenity_fuel.png" tekst="tekst_niebieski" />
+		</el>
+		<el typ="motorcycle_parking" pl="Parking dla motocykli">
+			<poz min="1" max="2" tlo="amenity_motorcycleparking.png" tekst="tekst_niebieski" />
+		</el>
+		<el typ="parking" flagi="punkt" pl="Parking">
+			<poz min="1" max="2" tlo="amenity_parking.png" tekst="tekst_niebieski" />
+		</el>
+		<el typ="parking" flagi="pole" pl="Parking">
+			<poz min="1" max="4" tlo="amenity_parking" ramka="barrier_yes" />
+		</el>
+		<el typ="taxi" pl="Postój taksówek">
+			<poz min="1" max="2" tlo="amenity_taxi.png" tekst="tekst_niebieski" />
+		</el>
+		<el typ="atm" pl="Bankomat">
+			<poz min="1" max="2" tlo="amenity_atm.png" tekst="tekst_brazowy" />
+			<poz min="3" max="4" tlo="amenity.png" />
+		</el>
+		<el typ="bank" pl="Bank">
+			<poz min="1" max="2" tlo="amenity_bank.png" tekst="tekst_brazowy" />
+			<poz min="3" max="4" tlo="amenity.png" />
+		</el>
+		<el typ="clinic" pl="Przychodnia">
+			<poz min="1" max="2" tlo="amenity_clinic.png" tekst="tekst_rozowy" />
+		</el>
+		<el typ="dentist" pl="Dentysta">
+			<poz min="1" max="2" tlo="amenity_dentist.png" tekst="tekst_rozowy" />
+		</el>
+		<el typ="doctors" pl="Gabinet lekarski">
+			<poz min="1" max="2" tlo="amenity_clinic.png" tekst="tekst_rozowy" />
+		</el>
+		<el typ="hospital" pl="Szpital">
+			<poz min="1" max="2" tlo="amenity_hospital.png" tekst="tekst_rozowy" />
+		</el>
+		<el typ="pharmacy" pl="Apteka">
+			<poz min="1" max="2" tlo="amenity_pharmacy.png" tekst="tekst_rozowy" />
+		</el>
+		<el typ="social_facility" pl="Ośrodek pomocy społecznej">
+			<poz min="1" max="2" tlo="amenity_socialfacility.png" tekst="tekst_brazowy" />
+			<poz min="3" max="4" tlo="amenity.png" />
+		</el>
+		<el typ="veterinary" pl="Weterynarz">
+			<poz min="1" max="2" tlo="amenity_veterinary.png" tekst="tekst_rozowy" />
+		</el>
+		<el typ="arts_centre" pl="Centrum sztuki">
+			<poz min="1" max="2" tlo="amenity_artscentre.png" tekst="tekst_brazowy" />
+			<poz min="3" max="4" tlo="amenity.png" />
+		</el>
+		<el typ="cinema" pl="Kino">
+			<poz min="1" max="2" tlo="amenity_cinema.png" tekst="tekst_brazowy" />
+			<poz min="3" max="4" tlo="amenity.png" />
+		</el>
+		<el typ="community_centre" pl="Centrum społeczności">
+			<poz min="1" max="2" tlo="amenity_communitycentre.png" tekst="tekst_brazowy" />
+			<poz min="3" max="4" tlo="amenity.png" />
+		</el>
+		<el typ="fountain" pl="Fontanna">
+			<poz min="1" max="2" tlo="amenity_fountain.png" tekst="tekst_fioletowy2" />
+		</el>
+		<el typ="nightclub" pl="Klub nocny">
+			<poz min="1" max="2" tlo="amenity_nightclub.png" tekst="tekst_brazowy" />
+			<poz min="3" max="4" tlo="amenity.png" />
+		</el>
+		<el typ="theatre" pl="Teatr">
+			<poz min="1" max="2" tlo="amenity_theatre.png" tekst="tekst_brazowy" />
+			<poz min="3" max="4" tlo="amenity.png" />
+		</el>
+		<el typ="bench" pl="Ławka">
+			<poz min="1" max="2" tlo="amenity_bench.png" tekst="tekst_brazowy" />
+		</el>
+		<el typ="courthouse" pl="Sąd">
+			<poz min="1" max="2" tlo="amenity_courthouse.png" tekst="tekst_brazowy" />
+			<poz min="3" max="4" tlo="amenity.png" />
+		</el>
+		<el typ="embassy" pl="Ambasada">
+			<poz min="1" max="2" tlo="amenity_embassy.png" tekst="tekst_brazowy" />
+			<poz min="3" max="4" tlo="amenity.png" />
+		</el>
+		<el typ="fire_station" pl="Straż pożarna">
+			<poz min="1" max="2" tlo="amenity_firestation.png" tekst="tekst_brazowy" />
+			<poz min="3" max="4" tlo="amenity.png" />
+		</el>
+		<el typ="hunting_stand" pl="Ambona">
+			<poz min="1" max="2" tlo="amenity_huntingstand.png" tekst="tekst_szary" />
+		</el>
+		<el typ="marketplace" pl="Targowisko">
+			<poz min="1" max="2" tlo="amenity_marketplace.png" tekst="tekst_fioletowy" />
+		</el>
+		<el typ="police" pl="Policja">
+			<poz min="1" max="2" tlo="amenity_police.png" tekst="tekst_brazowy" />
+			<poz min="3" max="4" tlo="amenity.png" />
+		</el>
+		<el typ="post_box" pl="Skrzynka na listy">
+			<poz min="1" max="2" tlo="amenity_postbox.png" tekst="tekst_brazowy" />
+		</el>
+		<el typ="post_office" pl="Poczta">
+			<poz min="1" max="2" tlo="amenity_postoffice.png" tekst="tekst_brazowy" />
+			<poz min="3" max="4" tlo="amenity.png" />
+		</el>
+		<el typ="prison" pl="Więzienie">
+			<poz min="1" max="2" tlo="amenity_prison.png" tekst="tekst_brazowy" />
+			<poz min="3" max="4" tlo="amenity.png" />
+		</el>
+		<el typ="recycling" pl="Pojemnik do segregacji śmieci">
+			<poz min="1" max="2" tlo="amenity_recycling.png" tekst="tekst_brazowy" />
+		</el>
+		<el typ="shelter" pl="Schronienie">
+			<poz min="1" max="2" tlo="amenity_shelter.png" tekst="tekst_brazowy" />
+		</el>
+		<el typ="telephone" pl="Budka telefoniczna">
+			<poz min="1" max="2" tlo="amenity_telephone.png" tekst="tekst_brazowy" />
+		</el>
+		<el typ="toilets" pl="Toalety">
+			<poz min="1" max="2" tlo="amenity_toilets.png" tekst="tekst_brazowy" />
+			<poz min="3" max="4" tlo="amenity.png" />
+		</el>
+		<el typ="townhall" pl="Urząd miasta">
+			<poz min="1" max="2" tlo="amenity_townhall.png" tekst="tekst_brazowy" />
+			<poz min="3" max="4" tlo="amenity.png" />
+		</el>
+		<el typ="waste_basket" pl="Kosz na śmieci">
+			<poz min="1" max="2" tlo="amenity_wastebasket.png" tekst="tekst_brazowy" />
+		</el>
+		<el typ="college" flagi="pole" pl="Kampus uczelni">
+			<poz min="1" max="10" tlo="amenity_college" />
+		</el>
+		<el typ="kindergarten" flagi="pole" pl="Przedszkole">
+			<poz min="1" max="10" tlo="amenity_college" />
+		</el>
+		<el typ="school" flagi="pole" pl="Szkoła">
+			<poz min="1" max="10" tlo="amenity_college" />
+		</el>
+		<el typ="university" flagi="pole" pl="Kampus uczelni">
+			<poz min="1" max="10" tlo="amenity_college" />
+		</el>
+		<el typ="grave_yard" flagi="pole" pl="Cmentarz">
+			<poz min="1" max="10" tlo="landuse_cemetery.bmp" />
+		</el>
+		<el typ="vending_machine" pl="Automat sprzedażowy">
+			<poz min="1" max="2" tlo="amenity.png" tekst="tekst_brazowy" />
+			<poz min="3" max="4" tlo="amenity.png" />
+		</el>
+	</kat>
+	<kat nazwa="barrier" prkat="-10">
+		<el typ="gate" pl="Brama">
+			<poz min="1" max="2" tlo="barrier_gate.png" />
+		</el>
+		<el typ="lift_gate" pl="Szlaban">
+			<poz min="1" max="2" tlo="barrier_liftgate.png" />
+		</el>
+		<el typ="wall" pl="Mur">
+			<poz min="1" max="4" tlo="barrier_wall" />
+		</el>
+		<el typ="ditch" pl="Rów">
+			<poz min="1" max="4" tlo="barrier_yes" />
+		</el>
+		<el typ="fence" pl="Płot">
+			<poz min="1" max="4" tlo="barrier_yes" />
+		</el>
+		<el typ="guard_rail" pl="Barierka zabezpieczająca">
+			<poz min="1" max="4" tlo="barrier_yes" />
+		</el>
+		<el typ="handrail" pl="Barierka">
+			<poz min="1" max="4" tlo="barrier_yes" />
+		</el>
+		<el typ="kerb" pl="Krawężnik">
+			<poz min="1" max="4" tlo="barrier_yes" />
+		</el>
+		<el typ="retaining_wall" pl="Mur oporowy">
+			<poz min="1" max="4" tlo="barrier_yes" />
+		</el>
+		<el typ="block" pl="Blok">
+			<poz min="1" max="4" tlo="barrier_block" />
+		</el>
+		<el typ="yes" pl="Bariera">
+			<poz min="1" max="4" tlo="barrier_yes" />
+		</el>
+	</kat>
+	<kat nazwa="highway">
+		<el typ="bus_stop" pl="Przystanek autobusowy">
+			<poz min="1" max="2" tlo="highway_busstop.png" tekst="tekst_niebieski" />
+			<poz min="3" max="4" tlo="highway_busstop2.png" />
+		</el>
+		<el typ="elevator" pl="Winda">
+			<poz min="1" max="2" tlo="highway_elevator.png" />
+		</el>
+		<el typ="traffic_signals" pl="Sygnalizacja świetlna">
+			<poz min="1" max="2" tlo="highway_signals.png" />
+		</el>
+		<el typ="street_lamp" pl="Lampa">
+			<poz min="1" max="1" tlo="highway_streetlamp.png" />
+		</el>
+		<el typ="motorway" pl="Autostrada">
+			<poz min="1" max="1" grubosc="20" tlo="highway_motorway" ramka="barrier_wall" tekst="railway_tram" />
+			<poz min="2" max="3" grubosc="10" tlo="highway_motorway" ramka="barrier_wall" tekst="railway_tram" />
+			<poz min="4" max="8" grubosc="5" tlo="highway_motorway" tekst="railway_tram" />
+			<poz min="9" max="10" grubosc="5" tlo="highway_motorway" />
+		</el>
+		<el typ="motorway_link" pl="Zjazd z autostrady">
+			<poz min="1" max="1" grubosc="20" tlo="highway_motorway" ramka="barrier_wall" tekst="railway_tram" />
+			<poz min="2" max="3" grubosc="10" tlo="highway_motorway" ramka="barrier_wall" tekst="railway_tram" />
+			<poz min="4" max="8" grubosc="5" tlo="highway_motorway" tekst="railway_tram" />
+			<poz min="9" max="10" grubosc="5" tlo="highway_motorway" />
+		</el>
+		<el typ="trunk" pl="Droga ekspresowa">
+			<poz min="1" max="1" grubosc="20" tlo="highway_trunk" ramka="barrier_wall" tekst="railway_tram" />
+			<poz min="2" max="3" grubosc="10" tlo="highway_trunk" ramka="barrier_wall" tekst="railway_tram" />
+			<poz min="4" max="8" grubosc="5" tlo="highway_trunk" tekst="railway_tram" />
+			<poz min="9" max="10" grubosc="5" tlo="highway_trunk" />
+		</el>
+		<el typ="trunk_link" pl="Zjazd z drogi ekspresowej">
+			<poz min="1" max="1" grubosc="20" tlo="highway_trunk" ramka="barrier_wall" tekst="railway_tram" />
+			<poz min="2" max="3" grubosc="10" tlo="highway_trunk" ramka="barrier_wall" tekst="railway_tram" />
+			<poz min="4" max="8" grubosc="5" tlo="highway_trunk" tekst="railway_tram" />
+			<poz min="9" max="10" grubosc="5" tlo="highway_trunk" />
+		</el>
+		<el typ="primary" pl="Droga krajowa">
+			<poz min="1" max="1" grubosc="20" tlo="highway_primary" ramka="barrier_wall" tekst="railway_tram" />
+			<poz min="2" max="3" grubosc="10" tlo="highway_primary" ramka="barrier_wall" tekst="railway_tram" />
+			<poz min="4" max="8" grubosc="5" tlo="highway_primary" tekst="railway_tram" />
+			<poz min="9" max="10" grubosc="5" tlo="highway_primary" />
+		</el>
+		<el typ="primary_link" pl="Zjazd z drogi krajowej">
+			<poz min="1" max="1" grubosc="20" tlo="highway_primary" ramka="barrier_wall" tekst="railway_tram" />
+			<poz min="2" max="3" grubosc="10" tlo="highway_primary" ramka="barrier_wall" tekst="railway_tram" />
+			<poz min="4" max="8" grubosc="5" tlo="highway_primary" tekst="railway_tram" />
+			<poz min="9" max="10" grubosc="5" tlo="highway_primary" />
+		</el>
+		<el typ="secondary" pl="Droga wojewódzka">
+			<poz min="1" max="1" grubosc="20" tlo="highway_secondary" ramka="barrier_wall" tekst="railway_tram" />
+			<poz min="2" max="3" grubosc="10" tlo="highway_secondary" ramka="barrier_wall" tekst="railway_tram" />
+			<poz min="4" max="5" grubosc="5" tlo="highway_secondary" tekst="railway_tram" />
+			<poz min="6" max="10" grubosc="5" tlo="highway_secondary" />
+		</el>
+		<el typ="secondary_link" pl="Zjazd z drogi wojewódzkiej">
+			<poz min="1" max="1" grubosc="20" tlo="highway_secondary" ramka="barrier_wall" tekst="railway_tram" />
+			<poz min="2" max="3" grubosc="10" tlo="highway_secondary" ramka="barrier_wall" tekst="railway_tram" />
+			<poz min="4" max="5" grubosc="5" tlo="highway_secondary" tekst="railway_tram" />
+			<poz min="6" max="10" grubosc="5" tlo="highway_secondary" />
+		</el>
+		<el typ="tertiary" pl="Droga powiatowa">
+			<poz min="1" max="1" grubosc="15" tlo="bialy" ramka="barrier_wall" tekst="railway_tram" />
+			<poz min="2" max="3" grubosc="10" tlo="bialy" ramka="barrier_wall" tekst="railway_tram" />
+			<poz min="4" max="5" grubosc="4" tlo="bialy" tekst="railway_tram" />
+			<poz min="6" max="10" grubosc="4" tlo="bialy" />
+		</el>
+		<el typ="tertiary_link" pl="Zjazd z drogi powiatowej">
+			<poz min="1" max="1" grubosc="15" tlo="bialy" ramka="barrier_wall" tekst="railway_tram" />
+			<poz min="2" max="3" grubosc="10" tlo="bialy" ramka="barrier_wall" tekst="railway_tram" />
+			<poz min="4" max="5" grubosc="4" tlo="bialy" tekst="railway_tram" />
+			<poz min="6" max="10" grubosc="4" tlo="bialy" />
+		</el>
+		<el typ="unclassified" pl="Droga">
+			<poz min="1" max="1" grubosc="8" tlo="bialy" tekst="railway_tram" />
+			<poz min="2" max="3" grubosc="5" tlo="bialy" tekst="railway_tram" />
+			<poz min="4" max="7" grubosc="2" tlo="bialy" />
+			<poz min="8" max="9" grubosc="1" tlo="barrier_wall" />
+		</el>
+		<el typ="residential" pl="Droga lokalna">
+			<poz min="1" max="1" grubosc="8" tlo="bialy" tekst="railway_tram" />
+			<poz min="2" max="3" grubosc="5" tlo="bialy" tekst="railway_tram" />
+			<poz min="4" max="7" grubosc="2" tlo="bialy" />
+			<poz min="8" max="9" grubosc="1" tlo="barrier_wall" />
+		</el>
+		<el typ="service" pl="Droga dojazdowa">
+			<poz min="1" max="2" grubosc="2" tlo="bialy" tekst="railway_tram" />
+			<poz min="3" max="6" grubosc="2" tlo="bialy" />
+			<poz min="7" max="8" grubosc="1" tlo="barrier_wall" />
+		</el>
+		<el typ="living_street" pl="Droga w strefie zamieszkania">
+			<poz min="1" max="1" grubosc="8" tlo="highway_livingstreet" tekst="railway_tram" />
+			<poz min="2" max="3" grubosc="5" tlo="highway_livingstreet" tekst="railway_tram" />
+			<poz min="4" max="7" grubosc="2" tlo="highway_livingstreet" />
+			<poz min="8" max="9" grubosc="1" tlo="barrier_wall" />
+		</el>
+		<el typ="road" pl="Droga">
+			<poz min="1" max="1" grubosc="8" tlo="bialy" tekst="railway_tram" />
+			<poz min="2" max="3" grubosc="5" tlo="bialy" tekst="railway_tram" />
+			<poz min="4" max="7" grubosc="2" tlo="bialy" />
+			<poz min="8" max="9" grubosc="1" tlo="barrier_wall" />
+		</el>
+		<el typ="pedestrian" pl="Droga dla pieszych">
+			<poz min="1" max="1" grubosc="8" tlo="highway_pedestrian" tekst="railway_tram" />
+			<poz min="2" max="3" grubosc="5" tlo="highway_pedestrian" tekst="railway_tram" />
+			<poz min="4" max="7" grubosc="2" tlo="highway_pedestrian" />
+			<poz min="8" max="9" grubosc="1" tlo="barrier_wall" />
+		</el>
+		<el typ="raceway" pl="Tor wyścigowy">
+			<poz min="1" max="3" grubosc="4" tlo="highway_raceway" tekst="railway_tram" />
+			<poz min="4" max="7" grubosc="4" tlo="highway_raceway" />
+		</el>
+		<el typ="track" pl="Droga polna/leśna">
+			<poz min="1" max="3" grubosc="2" tlo="highway_track" ramka="highway_tlo" kreski="1" tekst="railway_tram" />
+			<poz min="4" max="5" grubosc="2" tlo="highway_track" ramka="highway_tlo" kreski="1" />
+		</el>
+		<el typ="footway" pl="Droga dla pieszych">
+			<poz min="1" max="3" grubosc="2" tlo="highway_path" ramka="highway_tlo" kreski="1" tekst="railway_tram" />
+			<poz min="4" max="5" grubosc="2" tlo="highway_path" ramka="highway_tlo" kreski="1" />
+		</el>
+		<el typ="path" pl="Ścieżka">
+			<poz min="1" max="3" grubosc="2" tlo="highway_path" ramka="highway_tlo" kreski="1" tekst="railway_tram" />
+			<poz min="4" max="5" grubosc="2" tlo="highway_path" ramka="highway_tlo" kreski="1" />
+		</el>
+		<el typ="steps" pl="Schody">
+			<poz min="1" max="3" grubosc="5" tlo="highway_path" ramka="highway_tlo" kreski="3" tekst="railway_tram" />
+			<poz min="4" max="5" grubosc="5" tlo="highway_path" ramka="highway_tlo" kreski="3" />
+		</el>
+		<el typ="cycleway" pl="Ścieżka rowerowa">
+			<poz min="1" max="3" grubosc="2" tlo="highway_cycleway" ramka="highway_tlo" kreski="1" tekst="railway_tram" />
+			<poz min="4" max="5" grubosc="2" tlo="highway_cycleway" ramka="highway_tlo" kreski="1" />
+		</el>
+		<el typ="platform" flagi="pole" pl="Miejsce oczekiwania dla pasażerów">
+			<poz min="1" max="2" grubosc="6" tlo="highway_platform" ramka="highway_tlo" />
+		</el>
+		<el typ="give_way" pl="Ustąp pierwszeństwa przejazdu">
+			<poz min="1" max="2" tlo="highway_giveway.png" tekst="railway_tram" />
+		</el>
+		<el typ="services" pl="Miejsce obsługi podróżnych" flagi="pole">
+			<poz min="1" max="8" tlo="highway_services" tekst="railway_tram" />
+		</el>
+	</kat>
+	<kat nazwa="leisure" flagi="punkt">
+		<el typ="golf_course" pl="Pole golfowe">
+			<poz min="1" max="2" tlo="leisure_golfcourse.png" tekst="tekst_zielony" />
+		</el>
+		<el typ="miniature_golf" pl="Minigolf">
+			<poz min="1" max="2" tlo="leisure_miniaturegolf.png" tekst="tekst_zielony" />
+		</el>
+		<el typ="playground" pl="Plac zabaw">
+			<poz min="1" max="2" tlo="leisure_playground.png" tekst="tekst_brazowy" />
+		</el>
+		<el typ="water_park" pl="Pływalnia">
+			<poz min="1" max="2" tlo="leisure_waterpark.png" tekst="tekst_brazowy" />
+		</el>
+		<el typ="garden" flagi="pole" pl="Ogród">
+			<poz min="1" max="5" tlo="leisure_garden" tekst="leisure_garden_tekst" />
+			<poz min="6" max="10" tlo="leisure_garden" />
+		</el>
+		<el typ="park" flagi="pole" pl="Park">
+			<poz min="1" max="5" tlo="leisure_park" tekst="leisure_park_tekst" />
+			<poz min="6" max="10" tlo="leisure_park" />
+		</el>
+		<el typ="pitch" flagi="pole" pl="Boisko">
+			<poz min="1" max="4" tlo="leisure_pitch" tekst="railway_tram" />
+			<poz min="5" max="8" tlo="leisure_pitch" />
+		</el>
+		<el typ="sports_centre" flagi="pole" pl="Centrum sportowe">
+			<poz min="1" max="4" tlo="leisure_sportscentre" tekst="leisure_sportscentre_tekst" />
+			<poz min="5" max="8" tlo="leisure_sportscentre" />
+		</el>
+		<el typ="stadium" flagi="pole" pl="Stadion">
+			<poz min="1" max="5" tlo="leisure_sportscentre" tekst="leisure_sportscentre_tekst" />
+			<poz min="6" max="10" tlo="leisure_sportscentre" />
+		</el>
+		<el typ="track" flagi="pole" pl="Bieżnia">
+			<poz min="1" max="4" tlo="leisure_track" tekst="railway_tram" />
+			<poz min="5" max="8" tlo="leisure_track" />
+		</el>
+	</kat>
+	<kat nazwa="man_made" flagi="punkt">
+		<el typ="lighthouse" pl="Latarnia morska">
+			<poz min="1" max="2" tlo="manmade_lighthouse.png" tekst="tekst_niebieski" />
+		</el>
+		<el typ="mast" pl="Maszt" priorytet="20">
+			<poz min="1" max="2" tlo="manmade_mast.png" tekst="tekst_szary" />
+		</el>
+		<el typ="water_tower" pl="Wieża ciśnień">
+			<poz min="1" max="2" tlo="manmade_watertower.png" tekst="tekst_szary" />
+		</el>
+		<el typ="tower" pl="Wieża">
+			<poz min="1" max="2" tlo="manmade_tower.png" tekst="tekst_szary" />
+		</el>
+		<el typ="chimney" pl="Komin">
+			<poz min="1" max="2" tlo="manmade_chimney.png" tekst="tekst_szary" />
+		</el>
+		<el typ="windmill" pl="Wiatrak">
+			<poz min="1" max="2" tlo="manmade_windmill.png" tekst="tekst_brazowy" />
+		</el>
+		<el typ="cutline" flagi="pole" pl="Przecinka leśna">
+			<poz min="1" max="3" tlo="manmade_cutline" tekst="railway_tram" />
+			<poz min="4" max="8" tlo="manmade_cutline" />
+		</el>
+		<el typ="pier" flagi="pole" pl="Molo">
+			<poz min="1" max="3" tlo="manmade_pier" tekst="railway_tram" />
+			<poz min="4" max="8" tlo="manmade_pier" />
+		</el>
+		<el typ="pipeline" flagi="" pl="Rurociąg">
+			<poz min="1" max="2" grubosc="7" tlo="manmade_pipeline" tekst="railway_tram" />
+			<poz min="3" max="6" grubosc="3" tlo="manmade_pipeline" />
+		</el>
+		<el typ="breakwater" flagi="pole" pl="Falochron">
+			<poz min="1" max="3" tlo="manmade_breakwater" tekst="railway_tram" />
+			<poz min="4" max="8" tlo="manmade_breakwater" />
+		</el>
+		<el typ="groyne" flagi="" pl="Ostroga brzegowa">
+			<poz min="1" max="2" grubosc="5" tlo="manmade_breakwater" tekst="railway_tram" />
+			<poz min="3" max="5" grubosc="2" tlo="manmade_breakwater" />
+		</el>
+	</kat>
+	<kat nazwa="tower:type" flagi="punkt">
+		<el typ="communication" pl="Wieża komunikacyjna" priorytet="10">
+			<poz min="1" max="2" tlo="manmade_mast.png" tekst="tekst_szary" />
+		</el>
+		<el typ="observation" pl="Wieża obserwacyjna" priorytet="10">
+			<poz min="1" max="2" tlo="towertype_observation.png" tekst="tekst_szary" />
+		</el>
+		<el typ="watchtower" pl="Wieża strażnicza" priorytet="10">
+			<poz min="1" max="2" tlo="towertype_observation.png" tekst="tekst_szary" />
+		</el>
+		<el typ="defensive" pl="Wieża obronna" priorytet="10">
+			<poz min="1" max="2" tlo="towertype_defensive.png" tekst="tekst_szary" />
+		</el>
+		<el typ="cooling" pl="Chłodnia kominowa" priorytet="10">
+			<poz min="1" max="2" tlo="towertype_cooling.png" tekst="tekst_szary" />
+		</el>
+		<el typ="bell_tower" pl="Dzwonnica" priorytet="10">
+			<poz min="1" max="2" tlo="towertype_belltower.png" tekst="tekst_szary" />
+		</el>
+		<el typ="lighting" pl="Wieża oświetleniowa" priorytet="10">
+			<poz min="1" max="2" tlo="highway_streetlamp.png" tekst="tekst_szary" />
+		</el>
+	</kat>
+	<kat nazwa="landuse" flagi="pole|krajobraz">
+		<el typ="allotments" pl="Ogródki działkowe">
+			<poz min="1" max="4" tlo="landuse_allotments.bmp" tekst="landuse_allotments_tekst" />
+			<poz min="5" max="10" tlo="landuse_allotments.bmp" />
+		</el>
+		<el typ="basin" pl="Sztuczny zbiornik wodny">
+			<poz min="1" max="4" tlo="water" tekst="tekst_water" />
+			<poz min="5" max="10" tlo="water" />
+		</el>
+		<el typ="brownfield" pl="Teren powyburzeniowy">
+			<poz min="1" max="4" tlo="landuse_brownfield" tekst="landuse_brownfield_tekst" />
+			<poz min="5" max="10" tlo="landuse_brownfield" />
+		</el>
+		<el typ="cemetery" pl="Cmentarz">
+			<poz min="1" max="4" tlo="landuse_cemetery.bmp" tekst="landuse_cemetery_tekst" />
+			<poz min="5" max="10" tlo="landuse_cemetery.bmp" />
+		</el>
+		<el typ="commercial" pl="Teren komercyjny">
+			<poz min="1" max="10" tlo="landuse_commercial" />
+		</el>
+		<el typ="construction" pl="Plac budowy">
+			<poz min="1" max="4" tlo="landuse_brownfield" tekst="landuse_brownfield_tekst" />
+			<poz min="5" max="10" tlo="landuse_brownfield" />
+		</el>
+		<el typ="farmland" pl="Pole">
+			<poz min="1" max="10" tlo="landuse_farmland" />
+		</el>
+		<el typ="farmyard" pl="Gospodarstwo rolne">
+			<poz min="1" max="10" tlo="landuse_farmyard" />
+		</el>
+		<el typ="forest" pl="Las">
+			<poz min="1" max="10" tlo="landuse_forest.bmp" />
+		</el>
+		<el typ="garages" pl="Garaże">
+			<poz min="1" max="10" tlo="landuse_garages" />
+		</el>
+		<el typ="grass" pl="Trawa">
+			<poz min="1" max="10" tlo="landuse_grass" />
+		</el>
+		<el typ="greenfield" pl="Teren przeznaczony do zabudowy">
+			<poz min="1" max="10" tlo="landuse_greenfield" />
+		</el>
+		<el typ="greenhouse_horticulture" pl="Szklarnia">
+			<poz min="1" max="10" tlo="landuse_farmland" />
+		</el>
+		<el typ="industrial" pl="Teren przemysłowy">
+			<poz min="1" max="4" tlo="landuse_industrial" tekst="landuse_industrial_tekst" />
+			<poz min="5" max="10" tlo="landuse_industrial" />
+		</el>
+		<el typ="landfill" pl="Wysypisko śmieci">
+			<poz min="1" max="10" tlo="landuse_brownfield" />
+		</el>
+		<el typ="meadow" pl="Łąka">
+			<poz min="1" max="5" tlo="landuse_meadow" tekst="landuse_meadow_tekst" />
+			<poz min="6" max="10" tlo="landuse_meadow" />
+		</el>
+		<el typ="military" pl="Teren wojskowy">
+			<poz min="1" max="10" tlo="landuse_military.bmp" />
+		</el>
+		<el typ="orchard" pl="Sad">
+			<poz min="1" max="10" tlo="landuse_orchard.bmp" />
+		</el>
+		<el typ="plant_nursery" pl="Szkółka leśna">
+			<poz min="1" max="10" tlo="landuse_plantnursery.png" />
+		</el>
+		<el typ="religious" pl="Teren religijny">
+			<poz min="1" max="10" tlo="landuse_religious" />
+		</el>
+		<el typ="quarry" pl="Kamieniołom">
+			<poz min="1" max="10" tlo="landuse_quarry.bmp" />
+		</el>
+		<el typ="railway" pl="Teren kolejowy">
+			<poz min="1" max="10" tlo="landuse_railway" />
+		</el>
+		<el typ="recreation_ground" pl="Teren rekreacyjny">
+			<poz min="1" max="10" tlo="landuse_recreationground" />
+		</el>
+		<el typ="reservoir" pl="Sztuczny zbiornik wodny">
+			<poz min="1" max="4" tlo="water" tekst="tekst_water" />
+			<poz min="5" max="10" tlo="water" />
+		</el>
+		<el typ="residential" pl="Teren zabudowy mieszkaniowej">
+			<poz min="1" max="10" tlo="landuse_residential" />
+		</el>
+		<el typ="retail" pl="Teren handlowy">
+			<poz min="1" max="10" tlo="landuse_retail" />
+		</el>
+		<el typ="village_green" pl="Teren zielony">
+			<poz min="1" max="10" tlo="landuse_grass" />
+		</el>
+		<el typ="vineyard" pl="Winnica">
+			<poz min="1" max="10" tlo="landuse_vineyard.bmp" />
+		</el>
+		<el typ="wood" pl="Las">
+			<poz min="1" max="10" tlo="landuse_forest.bmp" />
+		</el>
+	</kat>
+	<kat nazwa="power">
+		<el typ="line" pl="Linia wysokiego napięcia">
+			<poz min="1" max="4" tlo="power_line" tekst="railway_tram" />
+			<poz min="5" max="7" tlo="power_line"/>
+		</el>
+		<el typ="minor_line" pl="Linia średniego napięcia">
+			<poz min="1" max="2" tlo="power_line" tekst="railway_tram" />
+			<poz min="3" max="5" tlo="power_line" />
+		</el>
+		<el typ="tower" pl="Słup wysokiego napięcia">
+			<poz min="1" max="4" tlo="power_tower1.bmp" />
+			<poz min="5" max="7" tlo="power_tower2.bmp" />
+		</el>
+		<el typ="pole" pl="Słup średniego napięcia">
+			<poz min="1" max="2" tlo="power_tower1.bmp" />
+			<poz min="3" max="5" tlo="power_tower2.bmp" />
+		</el>
+		<el typ="catenary_mast" pl="Słup trakcyjny">
+			<poz min="1" max="2" tlo="power_tower1.bmp" />
+			<poz min="3" max="5" tlo="power_tower2.bmp" />
+		</el>
+		<el typ="substation" flagi="pole" pl="Stacja energetyczna">
+			<poz min="1" max="2" tlo="power_substation" tekst="tekst_fioletowy" />
+			<poz min="3" max="7" tlo="power_substation" />
+		</el>
+	</kat>
+	<kat nazwa="waterway">
+		<el typ="river" pl="Rzeka">
+			<poz min="1" max="2" grubosc="10" tlo="water" tekst="tekst_water" />
+			<poz min="3" max="6" grubosc="5" tlo="water" />
+			<poz min="7" max="10" grubosc="3" tlo="water" />
+		</el>
+		<el typ="stream" pl="Strumień">
+			<poz min="1" max="2" grubosc="3" tlo="water" tekst="tekst_water" />
+			<poz min="3" max="8" grubosc="1" tlo="water" />
+		</el>
+		<el typ="canal" pl="Kanał">
+			<poz min="1" max="2" grubosc="10" tlo="water" tekst="tekst_water" />
+			<poz min="3" max="6" grubosc="5" tlo="water" />
+			<poz min="7" max="10" grubosc="3" tlo="water" />
+		</el>
+		<el typ="drain" pl="Rów odwadniający">
+			<poz min="1" max="2" grubosc="3" tlo="water" tekst="tekst_water" />
+			<poz min="3" max="8" grubosc="1" tlo="water" />
+		</el>
+		<el typ="ditch" pl="Rów">
+			<poz min="1" max="2" grubosc="3" tlo="water" tekst="tekst_water" />
+			<poz min="3" max="8" grubosc="1" tlo="water" />
+		</el>
+		<el typ="riverbank" flagi="pole" pl="Rzeka">
+			<poz min="1" max="5" tlo="water" tekst="tekst_water" />
+			<poz min="6" max="10" tlo="water" />
+		</el>
+	</kat>
+	<kat nazwa="natural" flagi="pole|krajobraz">
+		<el typ="tree" flagi="" pl="Drzewo">
+			<poz min="1" max="2" tlo="natural_tree.png" />
+		</el>
+		<el typ="water" pl="Zbiornik wodny">
+			<poz min="1" max="5" tlo="water" tekst="tekst_water" />
+			<poz min="6" max="10" tlo="water" />
+		</el>
+		<el typ="wood" pl="Las">
+			<poz min="1" max="10" tlo="landuse_forest.bmp" />
+		</el>
+		<el typ="tree_row" flagi="" pl="Linia drzew">
+			<poz min="1" max="4" tlo="natural_treerow" grubosc="10" />
+		</el>
+		<el typ="scrub" pl="Zarośla">
+			<poz min="1" max="10" tlo="natural_scrub.png" />
+		</el>
+		<el typ="heath" pl="Wrzosowisko">
+			<poz min="1" max="10" tlo="natural_heath" />
+		</el>
+		<el typ="grassland" pl="Łąka">
+			<poz min="1" max="5" tlo="natural_grassland" tekst="natural_grassland_tekst" />
+			<poz min="6" max="10" tlo="natural_grassland" />
+		</el>
+		<el typ="fell" pl="Hala górska">
+			<poz min="1" max="10" tlo="natural_heath" />
+		</el>
+		<el typ="bare_rock" pl="Skały">
+			<poz min="1" max="10" tlo="natural_barerock.png" />
+		</el>
+		<el typ="scree" pl="Rumowisko">
+			<poz min="1" max="10" tlo="natural_scree.png" />
+		</el>
+		<el typ="shingle" pl="Teren kamienisty">
+			<poz min="1" max="10" tlo="natural_scree.png" />
+		</el>
+		<el typ="sand" pl="Piasek">
+			<poz min="1" max="10" tlo="natural_sand.png" />
+		</el>
+		<el typ="mud" pl="Błoto">
+			<poz min="1" max="10" tlo="natural_mud.png" />
+		</el>
+		<el typ="wetland" pl="Bagna">
+			<poz min="1" max="10" tlo="natural_wetland.png" />
+		</el>
+		<el typ="glacier" pl="Lodowiec">
+			<poz min="1" max="10" tlo="natural_glacier.png" />
+		</el>
+		<el typ="bay" pl="Zatoka">
+			<poz min="1" max="5" tlo="water" tekst="tekst_water" />
+			<poz min="6" max="10" tlo="water" />
+		</el>
+		<el typ="beach" pl="Plaża">
+			<poz min="1" max="10" tlo="natural_beach.png" />
+		</el>
+		<el typ="spring" flagi="" pl="Źródło">
+			<poz min="1" max="6" tlo="amenity_fountain.png" tekst="tekst_fioletowy2" />
+		</el>
+		<el typ="hot_spring" flagi="" pl="Źródło geotermalne">
+			<poz min="1" max="6" tlo="amenity_fountain.png" tekst="tekst_fioletowy2" />
+		</el>
+		<el typ="geyser" flagi="" pl="Gejzer">
+			<poz min="1" max="6" tlo="amenity_fountain.png" tekst="tekst_fioletowy2" />
+		</el>
+		<el typ="peak" flagi="" pl="Szczyt">
+			<poz min="1" max="9" tlo="natural_peak.png" tekst="tekst_peak" />
+		</el>
+		<el typ="volcano" flagi="" pl="Wulkan">
+			<poz min="1" max="6" tlo="natural_volcano.png" tekst="tekst_rozowy" />
+		</el>
+		<el typ="saddle" flagi="" pl="Przełęcz">
+			<poz min="1" max="9" tlo="natural_saddle.png" tekst="tekst_peak" />
+		</el>
+		<el typ="cave_entrance" flagi="" pl="Jaskinia">
+			<poz min="1" max="6" tlo="natural_caveentrance.png" tekst="railway_tram" />
+		</el>
+	</kat>
+	<kat nazwa="aeroway">
+		<el typ="aerodrome" pl="Lotnisko">
+			<poz min="1" max="2" tlo="aeroway_aerodrome.png" />
+		</el>
+		<el typ="helipad" pl="Miejsce lądowania helikopterów">
+			<poz min="1" max="2" tlo="aeroway_helipad.png" />
+		</el>
+		<el typ="apron" flagi="pole" pl="Płyta postojowa">
+			<poz min="1" max="10" tlo="aeroway_apron" />
+		</el>
+	</kat>
+	<kat nazwa="tourism" flagi="punkt">
+		<el typ="attraction" flagi="pole" priorytet="-10" pl="Atrakcja turystyczna">
+			<poz min="1" max="10" tlo="tourism_attraction" />
+		</el>
+		<el typ="alpine_hut" pl="Schronisko">
+			<poz min="1" max="2" tlo="tourism_alpinehut.png" tekst="tekst_niebieski" />
+		</el>
+		<el typ="apartment" pl="Apartament">
+			<poz min="1" max="2" tlo="tourism_apartment.png" tekst="tekst_niebieski" />
+		</el>
+		<el typ="artwork" pl="Obiekt sztuki">
+			<poz min="1" max="2" tlo="tourism_artwork.png" tekst="tekst_brazowy" />
+		</el>
+		<el typ="camp_site" pl="Pole namiotowe">
+			<poz min="1" max="2" tlo="tourism_campsite.png" tekst="tekst_niebieski" />
+		</el>
+		<el typ="camp_site" pl="Pole namiotowe" flagi="pole">
+			<poz min="1" max="5" tlo="tourism_campsite" tekst="railway_tram" />
+		</el>
+		<el typ="caravan_site" pl="Pole kempingowe">
+			<poz min="1" max="2" tlo="tourism_caravansite.png" tekst="tekst_niebieski" />
+		</el>
+		<el typ="chalet" pl="Domek letniskowy">
+			<poz min="1" max="2" tlo="tourism_chalet.png" tekst="tekst_niebieski" />
+		</el>
+		<el typ="guest_house" pl="Pokój gościnny">
+			<poz min="1" max="2" tlo="tourism_guesthouse.png" tekst="tekst_niebieski" />
+		</el>
+		<el typ="hostel" pl="Hostel">
+			<poz min="1" max="2" tlo="tourism_hostel.png" tekst="tekst_niebieski" />
+		</el>
+		<el typ="hotel" pl="Hotel">
+			<poz min="1" max="2" tlo="tourism_hotel.png" tekst="tekst_niebieski" />
+		</el>
+		<el typ="motel" pl="Motel">
+			<poz min="1" max="2" tlo="tourism_motel.png" tekst="tekst_niebieski" />
+		</el>
+		<el typ="information" pl="Informacja turystyczna">
+			<poz min="1" max="2" tlo="tourism_information.png" tekst="tekst_brazowy" />
+		</el>
+		<el typ="museum" pl="Muzeum">
+			<poz min="1" max="2" tlo="tourism_museum.png" tekst="tekst_brazowy" />
+		</el>
+		<el typ="picnic_site" pl="Miejsce piknikowe">
+			<poz min="1" max="2" tlo="amenity_bbq.png" tekst="tekst_brazowy" />
+		</el>
+		<el typ="viewpoint" pl="Punkt widokowy">
+			<poz min="1" max="2" tlo="tourism_viewpoint.png" tekst="tekst_brazowy" />
+		</el>
+		<el typ="wilderness_hut" pl="Schronisko">
+			<poz min="1" max="2" tlo="tourism_wildernesshut.png" tekst="tekst_niebieski" />
+		</el>
+	</kat>
+	<kat nazwa="shop" flagi="punkt">
+		<el typ="alcohol" pl="Sklep monopolowy">
+			<poz min="1" max="2" tlo="shop_alcohol.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="bakery" pl="Piekarnia">
+			<poz min="1" max="2" tlo="shop_bakery.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="beverages" pl="Sklep z napojami">
+			<poz min="1" max="2" tlo="shop_beverages.png" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="brewing_supplies" pl="Sklep z artykułami browarniczymi">
+			<poz min="1" max="2" tlo="shop.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="butcher" pl="Rzeźnik">
+			<poz min="1" max="2" tlo="shop_butcher.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="cheese" pl="Sklep z serami">
+			<poz min="1" max="2" tlo="shop.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="chocolate" pl="Sklep z czekoladą">
+			<poz min="1" max="2" tlo="shop.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="coffee" pl="Sklep z kawą">
+			<poz min="1" max="2" tlo="shop_coffee.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="confectionery" pl="Cukiernia">
+			<poz min="1" max="2" tlo="shop_confectionery.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="convenience" pl="Sklep spożywczy">
+			<poz min="1" max="2" tlo="shop_convenience.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="deli" pl="Delikatesy">
+			<poz min="1" max="2" tlo="shop_deli.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="dairy" pl="Sklep z nabiałem">
+			<poz min="1" max="2" tlo="shop_dairy.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="farm" pl="Sklep z produktami rolnymi">
+			<poz min="1" max="2" tlo="shop_farm.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="frozen_food" pl="Sklep z mrożonkami">
+			<poz min="1" max="2" tlo="shop.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="greengrocer" pl="Warzywniak">
+			<poz min="1" max="2" tlo="shop_farm.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="health_food" pl="Sklep ze zdrową żywnością">
+			<poz min="1" max="2" tlo="shop.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="ice_cream" pl="Lodziarnia">
+			<poz min="1" max="2" tlo="amenity_icecream.png" tekst="tekst_brazowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="pasta" pl="Sklep z makaronem">
+			<poz min="1" max="2" tlo="shop.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="pastry" pl="Piekarnia">
+			<poz min="1" max="2" tlo="shop.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="seafood" pl="Sklep rybny">
+			<poz min="1" max="2" tlo="shop_seafood.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="spices" pl="Sklep z przyprawami">
+			<poz min="1" max="2" tlo="shop.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="tea" pl="Sklep herbaciany">
+			<poz min="1" max="2" tlo="shop_tea.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="water" pl="Sklep z wodą">
+			<poz min="1" max="2" tlo="shop.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="department_store" pl="Sklep wielobranżowy">
+			<poz min="1" max="2" tlo="shop_departmentstore.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="general" pl="Sklep wielobranżowy">
+			<poz min="1" max="2" tlo="shop.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="kiosk" pl="Kiosk">
+			<poz min="1" max="2" tlo="shop_kiosk.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="mall" pl="Centrum handlowe">
+			<poz min="1" max="2" tlo="shop.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="supermarket" pl="Supermarket">
+			<poz min="1" max="2" tlo="shop_supermarket.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="wholesale" pl="Hurtownia">
+			<poz min="1" max="2" tlo="shop.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="baby_goods" pl="Sklep dziecięcy">
+			<poz min="1" max="2" tlo="shop.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="bag" pl="Sklep z torebkami">
+			<poz min="1" max="2" tlo="shop_bag.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="boutique" pl="Butik">
+			<poz min="1" max="2" tlo="shop.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="clothes" pl="Sklep odzieżowy">
+			<poz min="1" max="2" tlo="shop_clothes.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="fabric" pl="Sklep tekstylny">
+			<poz min="1" max="2" tlo="shop.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="fashion" pl="Sklep z modą">
+			<poz min="1" max="2" tlo="shop_clothes.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="jewelry" pl="Jubiler">
+			<poz min="1" max="2" tlo="shop_jewelry.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="leather" pl="Sklep z artykułami skórzanymi">
+			<poz min="1" max="2" tlo="shop.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="sewing" pl="Sklep z artykułami do szycia">
+			<poz min="1" max="2" tlo="shop.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="shoes" pl="Sklep obuwniczy">
+			<poz min="1" max="2" tlo="shop_shoes.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="tailor" pl="Krawiec">
+			<poz min="1" max="2" tlo="shop.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="watches" pl="Zegarmistrz">
+			<poz min="1" max="2" tlo="shop.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="charity" pl="Sklep charytatywny">
+			<poz min="1" max="2" tlo="shop.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="second_hand" pl="Lumpeks">
+			<poz min="1" max="2" tlo="shop.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="variety_store" pl="Sklep z niedrogimi artykułami">
+			<poz min="1" max="2" tlo="shop_varietystore.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="beauty" pl="Salon piękności">
+			<poz min="1" max="2" tlo="shop_beauty.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="chemist" pl="Drogeria">
+			<poz min="1" max="2" tlo="shop_chemist.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="cosmetics" pl="Sklep kosmetyczny">
+			<poz min="1" max="2" tlo="shop_cosmetics.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="erotic" pl="Sex-shop">
+			<poz min="1" max="2" tlo="shop.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="hairdresser" pl="Fryzjer">
+			<poz min="1" max="2" tlo="shop_hairdresser.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="hairdresser_supply" pl="Sklep z artykułami fryzjerskimi">
+			<poz min="1" max="2" tlo="shop.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="hearing_aids" pl="Sklep medyczny z urządzeniami słuchowymi">
+			<poz min="1" max="2" tlo="shop.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="herbalist" pl="Sklep zielarski">
+			<poz min="1" max="2" tlo="shop.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="massage" pl="Masażysta">
+			<poz min="1" max="2" tlo="shop.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="medical_supply" pl="Sklep medyczny">
+			<poz min="1" max="2" tlo="shop_medicalsupply.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="nutrition_supplements" pl="Sklep z artykułami zdrowotnymi">
+			<poz min="1" max="2" tlo="shop.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="optician" pl="Optyk">
+			<poz min="1" max="2" tlo="shop_optician.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="perfumery" pl="Perfumeria">
+			<poz min="1" max="2" tlo="shop_cosmetics.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="tattoo" pl="Salon tatuażu">
+			<poz min="1" max="2" tlo="shop.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="agrarian" pl="Sklep rolniczy">
+			<poz min="1" max="2" tlo="shop.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="appliance" pl="Sklep AGD/RTV">
+			<poz min="1" max="2" tlo="shop.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="bathroom_furnishing" pl="Sklep z akcesorami łazienkowymi">
+			<poz min="1" max="2" tlo="shop.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="doityourself" pl="Sklep budowlany">
+			<poz min="1" max="2" tlo="shop_doityourself.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="electrical" pl="Sklep elektryczny">
+			<poz min="1" max="2" tlo="shop.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="energy" pl="Salon dostawcy energii">
+			<poz min="1" max="2" tlo="shop.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="fireplace" pl="Sklep z artykułami grzewczymi">
+			<poz min="1" max="2" tlo="shop.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="florist" pl="Kwiaciarnia">
+			<poz min="1" max="2" tlo="shop_florist.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="garden_centre" pl="Sklep ogrodniczy">
+			<poz min="1" max="2" tlo="shop_gardencentre.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="garden_furniture" pl="Sklep z meblami ogrodowymi">
+			<poz min="1" max="2" tlo="shop.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="gas" pl="Punkt sprzedaży gazu">
+			<poz min="1" max="2" tlo="shop.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="glaziery" pl="Szklarz">
+			<poz min="1" max="2" tlo="shop.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="hardware" pl="Sklep narzędziowy">
+			<poz min="1" max="2" tlo="shop_doityourself.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="houseware" pl="Sklep z wyposażeniem domu">
+			<poz min="1" max="2" tlo="shop.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="locksmith" pl="Ślusarz">
+			<poz min="1" max="2" tlo="shop.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="paint" pl="Sklep z farbami">
+			<poz min="1" max="2" tlo="shop.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="security" pl="Sklep z zabezpieczeniami">
+			<poz min="1" max="2" tlo="shop.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="trade" pl="Sklep z materiałami budowlanymi">
+			<poz min="1" max="2" tlo="shop.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="antiques" pl="Sklep z antykami">
+			<poz min="1" max="2" tlo="shop.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="bed" pl="Sklep z wyposażeniem sypialni">
+			<poz min="1" max="2" tlo="shop_bed.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="candles" pl="Sklep ze świecami">
+			<poz min="1" max="2" tlo="shop.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="carpet" pl="Sklep z dywanami">
+			<poz min="1" max="2" tlo="shop.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="curtain" pl="Sklep z zasłonami">
+			<poz min="1" max="2" tlo="shop.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="doors" pl="Sklep z drzwiami">
+			<poz min="1" max="2" tlo="shop.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="flooring" pl="Sklep podłogowy">
+			<poz min="1" max="2" tlo="shop.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="furniture" pl="Sklep meblowy">
+			<poz min="1" max="2" tlo="shop_furniture.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="interior_decoration" pl="Sklep z wyposażeniem wnętrz">
+			<poz min="1" max="2" tlo="shop.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="kitchen" pl="Sklep z wyposażeniem kuchni">
+			<poz min="1" max="2" tlo="shop.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="lamps" pl="Sklep oświetleniowy">
+			<poz min="1" max="2" tlo="shop.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="tiles" pl="Sklep glazurniczy">
+			<poz min="1" max="2" tlo="shop.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="window_blind" pl="Sklep z roletami">
+			<poz min="1" max="2" tlo="shop.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="computer" pl="Sklep komputerowy">
+			<poz min="1" max="2" tlo="shop_computer.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="robot" pl="Sklep z robotami">
+			<poz min="1" max="2" tlo="shop.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="electronics" pl="Sklep elektroniczny/RTV">
+			<poz min="1" max="2" tlo="shop_electronics.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="hifi" pl="Sklep ze sprzętem audio">
+			<poz min="1" max="2" tlo="shop_hifi.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="mobile_phone" pl="Sklep z telefonami komórkowymi">
+			<poz min="1" max="2" tlo="shop_mobilephone.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="radiotechnics" pl="Sklep elektroniczny">
+			<poz min="1" max="2" tlo="shop.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="vacuum_cleaner" pl="Sklep z odkurzaczami">
+			<poz min="1" max="2" tlo="shop.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="atv" pl="Sklep z quadami">
+			<poz min="1" max="2" tlo="shop.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="bicycle" pl="Sklep rowerowy">
+			<poz min="1" max="2" tlo="shop_bicycle.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="boat" pl="Sklep z łodziami">
+			<poz min="1" max="2" tlo="shop.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="car" pl="Sklep samochodowy">
+			<poz min="1" max="2" tlo="shop_car.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="car_repair" pl="Warsztat samochodowy">
+			<poz min="1" max="2" tlo="shop_carrepair.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="car_parts" pl="Sklep z częściami do samochodów">
+			<poz min="1" max="2" tlo="shop_carparts.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="fuel" pl="Sklep z paliwami">
+			<poz min="1" max="2" tlo="shop.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="fishing" pl="Sklep wędkarski">
+			<poz min="1" max="2" tlo="shop.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="free_flying" pl="Sklep z artykułami lotniczymi">
+			<poz min="1" max="2" tlo="shop.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="hunting" pl="Sklep myśliwski">
+			<poz min="1" max="2" tlo="shop.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="jetski" pl="Sklep ze skuterami wodnymi">
+			<poz min="1" max="2" tlo="shop.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="motorcycle" pl="Sklep motocyklowy">
+			<poz min="1" max="2" tlo="shop_motorcycle.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="outdoor" pl="Sklep sportowy">
+			<poz min="1" max="2" tlo="shop_outdoor.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="scuba_diving" pl="Sklep z akcesoriami do nurkowania">
+			<poz min="1" max="2" tlo="shop.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="ski" pl="Sklep narciarski">
+			<poz min="1" max="2" tlo="shop.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="snowmobile" pl="Sklep ze skuterami śnieżnymi">
+			<poz min="1" max="2" tlo="shop.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="sports" pl="Sklep sportowy">
+			<poz min="1" max="2" tlo="shop_sports.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="swimming_pool" pl="Sklep z artykułami basenowymi">
+			<poz min="1" max="2" tlo="shop.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="tyres" pl="Sklep z oponami">
+			<poz min="1" max="2" tlo="shop_tyres.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="art" pl="Sklep z dziełami sztuki">
+			<poz min="1" max="2" tlo="amenity_artscentre.png" tekst="tekst_brazowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="collector" pl="Sklep kolekcjonerski">
+			<poz min="1" max="2" tlo="shop.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="craft" pl="Sklep papierniczy">
+			<poz min="1" max="2" tlo="shop.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="frame" pl="Sklep z ramami">
+			<poz min="1" max="2" tlo="shop.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="games" pl="Sklep z grami">
+			<poz min="1" max="2" tlo="shop.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="model" pl="Sklep modelarski">
+			<poz min="1" max="2" tlo="shop.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="music" pl="Sklep muzyczny">
+			<poz min="1" max="2" tlo="shop_music.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="musical_instrument" pl="Sklep z instrumentami muzycznymi">
+			<poz min="1" max="2" tlo="shop_musicalinstrument.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="photo" pl="Sklep fotograficzny">
+			<poz min="1" max="2" tlo="shop_photo.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="camera" pl="Sklep fotograficzny">
+			<poz min="1" max="2" tlo="shop_photo.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="trophy" pl="Sklep z trofeami">
+			<poz min="1" max="2" tlo="shop.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="video" pl="Sklep z filmami">
+			<poz min="1" max="2" tlo="shop.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="video_games" pl="Sklep z grami komputerowymi">
+			<poz min="1" max="2" tlo="shop_videogames.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="anime" pl="Sklep anime">
+			<poz min="1" max="2" tlo="shop.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="books" pl="Księgarnia">
+			<poz min="1" max="2" tlo="amenity_library.png" tekst="tekst_brazowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="gift" pl="Sklep z prezentami">
+			<poz min="1" max="2" tlo="shop_gift.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="lottery" pl="Totolotek">
+			<poz min="1" max="2" tlo="shop.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="newsagent" pl="Kiosk">
+			<poz min="1" max="2" tlo="shop_kiosk.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="stationery" pl="Sklep papierniczy">
+			<poz min="1" max="2" tlo="shop_stationery.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="ticket" pl="Sklep z biletami">
+			<poz min="1" max="2" tlo="shop_ticket.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="bookmaker" pl="Bukmacher">
+			<poz min="1" max="2" tlo="shop.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="copyshop" pl="Ksero">
+			<poz min="1" max="2" tlo="shop_copyshop.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="dry_cleaning" pl="Pralnia chemiczna">
+			<poz min="1" max="2" tlo="shop_drycleaning.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="e-cigarette" pl="Sklep z elektronicznymi papierosami">
+			<poz min="1" max="2" tlo="shop.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="funeral_directors" pl="Zakład pogrzebowy">
+			<poz min="1" max="2" tlo="shop.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="laundry" pl="Pralnia">
+			<poz min="1" max="2" tlo="shop_drycleaning.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="money_lender" pl="Punkt pożyczkowy">
+			<poz min="1" max="2" tlo="amenity_bank.png" tekst="tekst_brazowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="party" pl="Sklep imprezowy">
+			<poz min="1" max="2" tlo="shop.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="pawnbroker" pl="Lombard">
+			<poz min="1" max="2" tlo="shop.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="pet" pl="Sklep zoologiczny">
+			<poz min="1" max="2" tlo="shop_pet.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="pyrotechnics" pl="Sklep pirotechniczny">
+			<poz min="1" max="2" tlo="shop.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="religion" pl="Dewocjonalia">
+			<poz min="1" max="2" tlo="shop.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="storage_rental" pl="Magazyn">
+			<poz min="1" max="2" tlo="shop.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="tobacco" pl="Trafika">
+			<poz min="1" max="2" tlo="shop_tobacco.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="toys" pl="Sklep z zabawkami">
+			<poz min="1" max="2" tlo="shop_toys.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="travel_agency" pl="Biuro podróży">
+			<poz min="1" max="2" tlo="shop_travelagency.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="weapons" pl="Sklep z uzbrojeniem">
+			<poz min="1" max="2" tlo="shop.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+		<el typ="yes" priorytet="-10" pl="Sklep">
+			<poz min="1" max="2" tlo="shop.png" tekst="tekst_fioletowy" />
+			<poz min="3" max="4" tlo="shop.png" />
+		</el>
+	</kat>
+	<kat nazwa="historic">
+		<el typ="castle_wall" pl="Mur obronny">
+			<poz min="1" max="4" grubosc="3" tlo="historic_wall" />
+		</el>
+		<el typ="citywalls" pl="Mur miejski">
+			<poz min="1" max="4" grubosc="3" tlo="historic_wall" />
+		</el>
+		<el typ="archaeological_site" pl="Wykopaliska archeologiczne">
+			<poz min="1" max="2" tlo="historic_archaeologicalsite.png" tekst="tekst_brazowy" />
+		</el>
+		<el typ="city_gate" pl="Brama miejska">
+			<poz min="1" max="2" tlo="historic_citygate.png" tekst="tekst_szary" />
+		</el>
+		<el typ="fort" pl="Fort">
+			<poz min="1" max="2" tlo="historic_fort.png" tekst="tekst_brazowy" />
+		</el>
+		<el typ="manor" pl="Dwór">
+			<poz min="1" max="2" tlo="historic_manor.png" tekst="tekst_brazowy" />
+		</el>
+		<el typ="memorial" pl="Miejsce pamięci">
+			<poz min="1" max="2" tlo="historic_memorial.png" tekst="tekst_brazowy" />
+		</el>
+		<el typ="milestone" pl="Kamień milowy">
+			<poz min="1" max="2" tlo="historic_monument.png" tekst="tekst_brazowy" />
+		</el>
+		<el typ="monument" pl="Pomnik">
+			<poz min="1" max="2" tlo="historic_monument.png" tekst="tekst_brazowy" />
+		</el>
+		<el typ="wayside_cross" pl="Krzyż">
+			<poz min="1" max="2" tlo="historic_waysidecross.png" tekst="railway_tram" />
+		</el>
+		<el typ="wayside_shrine" pl="Kapliczka">
+			<poz min="1" max="2" tlo="historic_waysideshrine.png" tekst="tekst_szary" />
+		</el>
+	</kat>
+	<kat nazwa="advertising">
+		<el typ="column" pl="Słup ogłoszeniowy">
+			<poz min="1" max="2" tlo="advertising_column.png" />
+		</el>
+	</kat>
+	<kat nazwa="ford">
+		<el typ="*" pl="Bród">
+			<poz min="1" max="4" tlo="ford_yes.png" />
+		</el>
+	</kat>
+	<kat nazwa="boundary">
+		<el typ="national_park" pl="Park narodowy">
+			<poz min="1" max="10" tlo="boundary_nationalpark1" ramka="boundary_nationalpark2" tekst="boundary_nationalpark_tekst" grubosc="4" />
+		</el>
+		<el typ="administrative" pl="Granica">
+			<poz min="1" max="10" tlo="boundary_administrative" tekst="boundary_administrative" grubosc="2" />
+		</el>
+	</kat>
+	<kat nazwa="colour">
+		<el typ="blue" pl="Niebieski">
+			<poz min="1" max="8" tlo="niebieski" grubosc="3" kreski="2" />
+		</el>
+		<el typ="green" pl="Zielony">
+			<poz min="1" max="8" tlo="zielony" grubosc="3" kreski="2" />
+		</el>
+		<el typ="red" pl="Czerwony">
+			<poz min="1" max="8" tlo="czerwony" grubosc="3" kreski="2" />
+		</el>
+		<el typ="yellow" pl="Żółty">
+			<poz min="1" max="8" tlo="zolty" grubosc="3" kreski="2" />
+		</el>
+		<el typ="black" pl="Czarny">
+			<poz min="1" max="8" tlo="czarny" grubosc="3" kreski="2" />
+		</el>
+	</kat>
+</kategorie>
+</dane>

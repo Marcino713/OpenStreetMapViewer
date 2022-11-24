@@ -1,0 +1,534 @@
+﻿    'Friend Sub OtworzMape(SciezkaPliku As Object)
+    '    Dim Sciezka As String = CType(SciezkaPliku, String)
+    '    Okno.Invoke(Okno.UstawKontrolkiWczytywanie)
+    '    Dim plik As New XmlDocument()
+    '    plik.Load(Sciezka)
+
+    '    Dim el As XmlNodeList = plik.FirstChild.NextSibling.ChildNodes
+    '    Dim elem As XmlNode = el(0)
+    '    Dim l As Integer = el.Count - 1
+
+    '    For i As Integer = 0 To l
+
+    '        If i Mod 1000 = 0 Then
+    '            Okno.Invoke(Okno.UstawKontrolkiPostep, CInt(i / l) * 100)
+    '            Application.DoEvents()
+    '        End If
+
+
+    '        Select Case elem.Name
+
+    '            Case "node"
+    '                'If elem(i).HasChildNodes Then
+
+    '                'Else
+
+    '                Dim n As New Node
+
+    '                Dim atr As XmlAttributeCollection = elem.Attributes
+
+    '                n.id = i.ToString
+
+    '                For j As Integer = 0 To atr.Count - 1
+
+    '                    Select Case atr(j).Name
+    '                        Case "id" : n.id = atr(j).Value
+    '                        Case "lat" : n.lat = Double.Parse(atr(j).Value.Replace("."c, ","c))
+    '                        Case "lon" : n.lon = Double.Parse(atr(j).Value.Replace("."c, ","c))
+    '                    End Select
+    '                Next
+
+    '                Mapa.Nodes.Add(n.id, n)
+
+    '            'End If
+
+
+    '            Case "way"
+    '                Dim w As New Way
+    '                Dim v, k As String
+    '                Dim dodaj As Boolean = False
+
+    '                For j As Integer = 0 To elem.ChildNodes.Count - 1
+
+    '                    Select Case elem.ChildNodes(j).Name
+    '                        Case "nd"
+
+    '                            Dim s As String = elem.ChildNodes(j).Attributes(0).Value
+    '                            Dim n As Node = CType(Mapa.Nodes(s), Node)
+    '                            'If n.lat < 50 Or n.lon < 16 Then
+    '                            'Dim a As Integer = 0
+    '                            'End If
+
+    '                            w.Nodes.Add(n)
+
+    '                        Case "tag"
+    '                            For m As Integer = 0 To elem.ChildNodes(j).Attributes.Count - 1
+    '                                Select Case elem.ChildNodes(j).Attributes(m).Name
+    '                                    Case "k" : k = elem.ChildNodes(j).Attributes(m).Value
+    '                                    Case "v" : v = elem.ChildNodes(j).Attributes(m).Value
+    '                                End Select
+    '                            Next
+
+    '                            Select Case k
+    '                                Case "railway"
+
+    '                                    Select Case v
+    '                                        Case "rail"
+    '                                            dodaj = True
+    '                                            w.Rodzaj = k
+    '                                            w.Typ = v
+    '                                    End Select
+
+    '                                Case "highway"
+
+    '                                    Select Case v
+    '                                        Case "motorway", "trunk", "primary", "secondary", "tertiary", "unclassified", "residential", "service", "motorway_link", "trunk_link", "primary_link", "secondary_link", "tertiary_link", "living_street", "road", "raceway"
+    '                                            dodaj = True
+    '                                            w.Rodzaj = k
+    '                                            w.Typ = v
+    '                                    End Select
+
+    '                                Case "barrier"
+    '                                    Select Case v
+    '                                        Case "wall", "yes"
+    '                                            dodaj = True
+    '                                            w.Rodzaj = k
+    '                                            w.Typ = v
+    '                                    End Select
+
+    '                                Case "power"
+    '                                    Select Case v
+    '                                        Case "line", "minor_line"
+    '                                            dodaj = True
+    '                                            w.Rodzaj = k
+    '                                            w.Typ = v
+    '                                    End Select
+
+    '                                Case "waterway"
+    '                                    Select Case v
+    '                                        Case "river", "riverbank", "stream", "canal", "drain", "ditch"
+    '                                            dodaj = True
+    '                                            w.Rodzaj = k
+    '                                            w.Typ = v
+    '                                    End Select
+
+    '                                Case "natural"
+    '                                    Select Case v
+    '                                        Case "water"
+    '                                            dodaj = True
+    '                                            w.Rodzaj = k
+    '                                            w.Typ = v
+    '                                    End Select
+
+    '                                Case "landuse"
+    '                                    Select Case v
+    '                                        Case "allotments", "basin", "brownfield", "cemetery", "commercial", "construction", "farmland", "farmyard", "forest", "garages", "grass", "greenfield", "greenhouse_horticulture", "industrial", "landfill", "meadow", "military", "orchard", "quarry", "railway", "recreation_ground", "reservoir", "residential", "retail", "village_green", "vineyard"
+    '                                            dodaj = True
+    '                                            w.Rodzaj = k
+    '                                            w.Typ = v
+    '                                    End Select
+
+    '                                Case "aeroway"
+    '                                    Select Case v
+    '                                        Case "apron"
+    '                                            dodaj = True
+    '                                            w.Rodzaj = k
+    '                                            w.Typ = v
+    '                                    End Select
+
+    '                                Case "man_made"
+    '                                    Select Case v
+    '                                        Case "cutline", "pier"
+    '                                            dodaj = True
+    '                                            w.Rodzaj = k
+    '                                            w.Typ = v
+    '                                    End Select
+
+    '                                Case "leisure"
+    '                                    Select Case v
+    '                                        Case "garden", "park", "pitch", "sports_centre", "stadium", "track"
+    '                                            dodaj = True
+    '                                            w.Rodzaj = k
+    '                                            w.Typ = v
+    '                                    End Select
+
+    '                                Case "amenity"
+    '                                    Select Case v
+    '                                        Case "college", "kindergarten", "school", "university", "grave_yard"
+    '                                            dodaj = True
+    '                                            w.Rodzaj = k
+    '                                            w.Typ = v
+    '                                    End Select
+
+    '                                Case "tourism"
+    '                                    Select Case v
+    '                                        Case "attraction"
+    '                                            dodaj = True
+    '                                            w.Rodzaj = k
+    '                                            w.Typ = v
+    '                                    End Select
+
+    '                            End Select
+
+    '                    End Select
+
+    '                Next
+
+    '                If dodaj Then Mapa.Ways.Add(w)
+
+    '            Case "bounds"
+    '                For j As Integer = 0 To elem.Attributes.Count - 1
+    '                    Select Case elem.Attributes(j).Name
+    '                        Case "minlat" : Mapa.Bounds.minlat = Double.Parse(elem.Attributes(j).Value.Replace("."c, ","c))
+    '                        Case "minlon" : Mapa.Bounds.minlon = Double.Parse(elem.Attributes(j).Value.Replace("."c, ","c))
+    '                        Case "maxlat" : Mapa.Bounds.maxlat = Double.Parse(elem.Attributes(j).Value.Replace("."c, ","c))
+    '                        Case "maxlon" : Mapa.Bounds.maxlon = Double.Parse(elem.Attributes(j).Value.Replace("."c, ","c))
+    '                    End Select
+    '                Next
+
+    '        End Select
+
+    '        elem = elem.NextSibling
+
+    '    Next
+
+    '    Okno.Invoke(Okno.UstawKontrolkiKoniec)
+
+    'End Sub
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	Rysowanie mapy
+
+        'For i As Integer = 0 To Mapa.Ways.Count - 1
+        '    p1 = Mapa.Ways(i).Nodes(0) * macierz
+        '    p1.Y = wys - p1.Y
+
+        '    p = IntPtr.Zero
+        '    gr = 1.0
+        '    wypelnij = False
+
+        '    Select Case Mapa.Ways(i).Rodzaj
+        '        Case "railway"
+
+        '            Select Case Mapa.Ways(i).Typ
+        '                Case "rail"
+        '                    p = czarny
+        '            End Select
+
+        '        Case "highway"
+
+        '            Select Case Mapa.Ways(i).Typ
+        '                Case "motorway"
+        '                    p = motorway
+
+        '                Case "trunk"
+        '                    p = trunk
+
+        '                Case "primary"
+        '                    'p = czerwony
+        '                    p = primary
+        '                    'p = obr
+        '                    gr = 7.0
+
+        '                'Case "secondary"
+
+        '                Case "tertiary"
+        '                    p = szary_droga
+
+        '                Case "unclassified"
+        '                    p = szary_droga
+
+        '                Case "residential"
+        '                    p = szary_droga
+
+        '                Case "service"
+        '                    p = szary_droga
+
+        '                'Case "motorway_link"
+
+        '                'Case "trunk_link"
+
+        '                'Case "primary_link"
+
+        '                'Case "secondary_link"
+
+        '                Case "tertiary_link"
+        '                    p = szary_droga
+
+        '                Case "living_street"
+        '                    p = szary_droga
+
+        '                Case "road"
+        '                    p = szary_droga
+
+        '                Case "raceway"
+        '                    p = raceway
+
+        '            End Select
+
+        '        Case "barrier"
+        '            Select Case Mapa.Ways(i).Typ
+        '                Case "wall"
+        '                    p = barrier_wall
+
+        '                Case "yes"
+        '                    p = barrier_yes
+        '            End Select
+
+        '        Case "power"
+        '            Select Case Mapa.Ways(i).Typ
+        '                Case "line", "minor_line"
+        '                    p = power_line
+        '            End Select
+
+        '        Case "waterway"
+        '            Select Case Mapa.Ways(i).Typ
+        '                Case "river"
+        '                    p = niebieski
+
+        '                Case "riverbank"
+        '                    p = niebieski
+        '                    wypelnij = True
+
+        '                Case "stream"
+        '                    p = niebieski
+
+        '                Case "canal"
+        '                    p = niebieski
+
+        '                Case "drain"
+        '                    p = niebieski
+
+        '                Case "ditch"
+        '                    p = niebieski
+        '            End Select
+
+        '        Case "natural"
+        '            Select Case Mapa.Ways(i).Typ
+        '                Case "water"
+        '                    p = niebieski
+        '                    wypelnij = True
+        '            End Select
+
+        '        Case "landuse"
+        '            Select Case Mapa.Ways(i).Typ
+        '                Case "allotments"
+        '                    p = allotments
+        '                    wypelnij = True
+
+        '                Case "basin"
+        '                    p = niebieski
+        '                    wypelnij = True
+
+        '                Case "brownfield"
+        '                    p = brownfield
+        '                    wypelnij = True
+
+        '                Case "cemetery"
+        '                    p = cemetery
+        '                    wypelnij = True
+
+        '                Case "commercial"
+        '                    p = commercial
+        '                    wypelnij = True
+
+        '                Case "construction"
+        '                    p = construction
+        '                    wypelnij = True
+
+        '                Case "farmland"
+        '                    p = farmland
+        '                    wypelnij = True
+
+        '                Case "farmyard"
+        '                    p = farmyard
+        '                    wypelnij = True
+
+        '                Case "forest"
+        '                    p = obr
+        '                    wypelnij = True
+
+        '                Case "garages"
+        '                    p = garages
+        '                    wypelnij = True
+
+        '                Case "grass"
+        '                    p = grass
+        '                    wypelnij = True
+
+        '                Case "greenfield"
+        '                    p = greenfield
+        '                    wypelnij = True
+
+        '                Case "greenhouse_horticulture"
+        '                    p = greenhouse_horticulture
+        '                    wypelnij = True
+
+        '                Case "industrial"
+        '                    p = industrial
+        '                    wypelnij = True
+
+        '                Case "landfill"
+        '                    p = landfill
+        '                    wypelnij = True
+
+        '                Case "meadow"
+        '                    p = meadow
+        '                    wypelnij = True
+
+        '                Case "military"
+        '                    p = military
+        '                    wypelnij = True
+
+        '                Case "orchard"
+        '                    p = orchard
+        '                    wypelnij = True
+
+        '                Case "quarry"
+        '                    p = quarry
+        '                    wypelnij = True
+
+        '                Case "railway"
+        '                    p = landuse_railway
+        '                    wypelnij = True
+
+        '                Case "recreation_ground"
+        '                    p = recreation_ground
+        '                    wypelnij = True
+
+        '                Case "reservoir"
+        '                    p = reservoir
+        '                    wypelnij = True
+
+        '                Case "residential"
+        '                    p = residential
+        '                    wypelnij = True
+
+        '                Case "retail"
+        '                    p = retail
+        '                    wypelnij = True
+
+        '                Case "village_green"
+        '                    p = village_green
+        '                    wypelnij = True
+
+        '                Case "vineyard"
+        '                    p = vineyard
+        '                    wypelnij = True
+
+        '            End Select
+
+        '        Case "aeroway"
+        '            Select Case Mapa.Ways(i).Typ
+        '                Case "apron"
+        '                    p = aeroway_apron
+        '                    wypelnij = True
+        '            End Select
+
+        '        Case "man_made"
+        '            Select Case Mapa.Ways(i).Typ
+        '                Case "cutline"
+        '                    p = manmade_cutline
+        '                    wypelnij = True
+
+        '                Case "pier"
+        '                    p = manmade_pier
+        '                    wypelnij = True
+        '            End Select
+
+        '        Case "leisure"
+        '            Select Case Mapa.Ways(i).Typ
+        '                Case "garden"
+        '                    p = leisure_garden
+        '                    wypelnij = True
+
+        '                Case "park"
+        '                    p = leisure_park
+        '                    wypelnij = True
+
+        '                Case "pitch"
+        '                    p = leisure_pitch
+        '                    wypelnij = True
+
+        '                Case "sports_centre", "stadium"
+        '                    p = leisure_sportscentre
+        '                    wypelnij = True
+
+        '                Case "track"
+        '                    p = leisure_track
+        '                    wypelnij = True
+        '            End Select
+
+        '        Case "amenity"
+        '            Select Case Mapa.Ways(i).Typ
+        '                Case "college", "kindergarten", "school", "university"
+        '                    p = amenity_college
+        '                    wypelnij = True
+
+        '                Case "grave_yard"
+        '                    p = cemetery
+        '                    wypelnij = True
+        '            End Select
+
+        '        Case "tourism"
+        '            Select Case Mapa.Ways(i).Typ
+        '                Case "attraction"
+        '                    p = tourism_attraction
+        '                    wypelnij = True
+        '            End Select
+
+
+        '    End Select
+
+
+        '    If wypelnij Then
+
+        '        sciezka = UtworzGeometrieSciezka()
+        '        sink = RozpocznijFigure(sciezka, p1.X, p1.Y)
+
+        '        For j As Integer = 1 To Mapa.Ways(i).Nodes.Count - 2
+        '            p2 = Mapa.Ways(i).Nodes(j) * macierz
+        '            p2.Y = wys - p2.Y
+
+        '            If p <> IntPtr.Zero Then DodajLinie(sink, p2.X, p2.Y)
+        '        Next
+
+        '        p2 = Mapa.Ways(i).Nodes(Mapa.Ways(i).Nodes.Count - 1) * macierz
+        '        p2.Y = wys - p2.Y
+
+        '        If p1.X <> p2.X OrElse p1.Y <> p2.Y Then
+        '            DodajLinie(sink, p2.X, p2.Y)
+        '        End If
+
+        '        ZakonczSink(sink)
+        '        WypelnijSciezke(sciezka, p)
+        '        UsunSciezke(sciezka)
+
+        '    Else
+
+        '        For j As Integer = 1 To Mapa.Ways(i).Nodes.Count - 1
+        '            p2 = Mapa.Ways(i).Nodes(j) * macierz
+        '            p2.Y = wys - p2.Y
+
+        '            If p <> IntPtr.Zero Then RysujLinie(p, p1.X, p1.Y, p2.X, p2.Y, gr)
+        '            p1 = p2
+        '        Next
+
+        '    End If
+
+        'Next

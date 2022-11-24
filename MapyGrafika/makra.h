@@ -15,6 +15,4 @@ inline void SafeRelease(
 	}
 }
 
-enum typ_grafiki { bmp = 1, png = 2 };
-
 #endif

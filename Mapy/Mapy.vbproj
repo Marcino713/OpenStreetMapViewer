@@ -109,7 +109,26 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="OtworzMape.vb" />
+    <Compile Include="SzukajAdresu.Designer.vb">
+      <DependentUpon>SzukajAdresu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SzukajAdresu.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Tablica.vb" />
+    <Compile Include="Wczytywanie.Designer.vb">
+      <DependentUpon>Wczytywanie.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Wczytywanie.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WczytywaniePedzli.vb" />
+    <Compile Include="ZnalezioneElementy.Designer.vb">
+      <DependentUpon>ZnalezioneElementy.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ZnalezioneElementy.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Form1.resx">
@@ -123,6 +142,15 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SzukajAdresu.resx">
+      <DependentUpon>SzukajAdresu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wczytywanie.resx">
+      <DependentUpon>Wczytywanie.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ZnalezioneElementy.resx">
+      <DependentUpon>ZnalezioneElementy.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -149,9 +177,12 @@
     </COMReference>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Tekstury\*" />
     <None Include="grabbing.ico" />
     <None Include="grab.ico" />
+    <Content Include="Otwieranie mapy.txt" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
